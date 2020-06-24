@@ -96,8 +96,9 @@ class FightersBuild extends React.Component {
 
             <Grid container style={{flexGrow: "1"}} spacing={2}>
                 <Grid item xs={12}>
-                    <h2 style={{textAlign: "center"}}>Online Smash DOWN by @
-                        <a href="https://twitter.com/NightOfLunaTV"> NightOfLunaTV</a></h2>
+                    <h2 style={{textAlign: "center"}}>
+                        Online Smash DOWN by @<a href="https://twitter.com/NightOfLunaTV"> NightOfLunaTV</a>
+                    </h2>
                     <Grid container justify="center" spacing={2}>
                         {this.state.fightersList.map((value, index) => (
                             <SingleFighter

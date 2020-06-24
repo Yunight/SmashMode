@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FightersBuild.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FightersBuild.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +52,14 @@
     <property name="ts.external.directory.path" value="C:\Users\night\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\193.6494.34\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\night\WebstormProjects\smashnol\src\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\night\WebstormProjects\smashnol\public" />
       <recent name="C:\Users\night\WebstormProjects\smashnol\src\images" />
       <recent name="C:\Users\night\WebstormProjects\smashnol\src\fighter_data" />
       <recent name="C:\Users\night\WebstormProjects\smashnol\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\night\WebstormProjects\smashnol\src\images" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -86,7 +89,7 @@
       <updated>1592997254440</updated>
       <workItem from="1592997256440" duration="5614000" />
       <workItem from="1593002888492" duration="1304000" />
-      <workItem from="1593004203497" duration="23939000" />
+      <workItem from="1593004203497" duration="24910000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -116,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593027180469</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="title change">
+      <created>1593028542498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593028542498</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +137,8 @@
     <MESSAGE value="small changes" />
     <MESSAGE value="characters pictures" />
     <MESSAGE value="making the button smaller" />
-    <option name="LAST_COMMIT_MESSAGE" value="making the button smaller" />
+    <MESSAGE value="title change" />
+    <option name="LAST_COMMIT_MESSAGE" value="title change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="460" y="95" key="#ESLint" timestamp="1593000595947">
@@ -142,10 +153,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="294" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593009822941" />
-    <state x="506" y="58" key="CommitChangelistDialog2" timestamp="1593027179607">
+    <state x="850" y="86" key="CommitChangelistDialog2" timestamp="1593028541638">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="506" y="58" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593027179607" />
+    <state x="850" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593028541638" />
     <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1593025544570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -158,10 +169,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="352" y="77" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593015790530" />
-    <state x="452" y="183" key="Vcs.Push.Dialog.v2" timestamp="1593027182762">
+    <state x="452" y="183" key="Vcs.Push.Dialog.v2" timestamp="1593028546892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593027182762" />
+    <state x="452" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593028546892" />
     <state x="739" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593025688986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
