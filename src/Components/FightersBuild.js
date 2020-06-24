@@ -50,7 +50,7 @@ class FightersBuild extends React.Component {
 
         let tempFightersList = fighters_list;
         tempFightersList.map(fighter => {
-            fighter.disabled = false;
+            return fighter.disabled = false;
         });
 
         this.setState((state, props) => ({
@@ -67,6 +67,7 @@ class FightersBuild extends React.Component {
                 fighter.disabled = !fighter.disabled;
                 selectedFighter = fighter.displayName.fr_FR;
             }
+            return fighter;
         });
 
         this.setState((state, props) => ({
@@ -96,8 +97,7 @@ class FightersBuild extends React.Component {
             <Grid container style={{flexGrow: "1"}} spacing={2}>
                 <Grid item xs={12}>
                     <h2 style={{textAlign: "center"}}>Online Smash DOWN by @
-                        @
-                        <a href="https://twitter.com/NightOfLunaTV "> NightOfLunaTV</a> </h2>
+                        <a href="https://twitter.com/NightOfLunaTV"> NightOfLunaTV</a></h2>
                     <Grid container justify="center" spacing={2}>
                         {this.state.fightersList.map((value, index) => (
                             <SingleFighter
@@ -128,7 +128,7 @@ class FightersBuild extends React.Component {
                 </Container>
                 <Snackbar open={this.state.showModal} autoHideDuration={2000} onClose={this.handleClose}>
                     <Alert onClose={this.handleClose} severity="info">
-                        Ce combattant a été sélectionné : {this.state.selectedFighter}
+                        Ce combattant a été sélectionné : {this.state.selectedFighter.replace("<br>", "")}
                     </Alert>
                 </Snackbar>
 
