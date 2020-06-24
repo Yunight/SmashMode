@@ -4,7 +4,6 @@
     <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/FightersBuild.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FightersBuild.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SingleFighter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SingleFighter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,7 @@
       <updated>1592997254440</updated>
       <workItem from="1592997256440" duration="5614000" />
       <workItem from="1593002888492" duration="1304000" />
-      <workItem from="1593004203497" duration="21924000" />
+      <workItem from="1593004203497" duration="22690000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -97,7 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593025787601</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="small changes">
+      <created>1593026411368</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593026411368</updated>
+    </task>
+    <task id="LOCAL-00003" summary="characters pictures">
+      <created>1593026831951</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593026831951</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,7 +118,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial push 24/06/2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial push 24/06/2020" />
+    <MESSAGE value="small changes" />
+    <MESSAGE value="characters pictures" />
+    <option name="LAST_COMMIT_MESSAGE" value="characters pictures" />
   </component>
   <component name="WindowStateProjectService">
     <state x="460" y="95" key="#ESLint" timestamp="1593000595947">
@@ -120,10 +135,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="294" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593009822941" />
-    <state x="506" y="58" key="CommitChangelistDialog2" timestamp="1593025786686">
+    <state x="506" y="58" key="CommitChangelistDialog2" timestamp="1593026831029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="506" y="58" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593025786686" />
+    <state x="506" y="58" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593026831029" />
     <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1593025544570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -136,10 +151,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="352" y="77" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593015790530" />
-    <state x="452" y="183" key="Vcs.Push.Dialog.v2" timestamp="1593025790647">
+    <state x="452" y="183" key="Vcs.Push.Dialog.v2" timestamp="1593026834519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593025790647" />
+    <state x="452" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593026834519" />
     <state x="739" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593025688986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

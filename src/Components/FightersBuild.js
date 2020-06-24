@@ -114,7 +114,7 @@ class FightersBuild extends React.Component {
                     <Button onClick={(e) => this.handleRandom(this.state.fightersList)} variant="outlined" size="large"
                             color="primary"
                             disabled={listAvailable.length === 0}
-                            style={{height: "200px", width: "400px", fontSize: "70px"}}>
+                            style={{height: "150px", width: "350px", fontSize: "70px"}}>
                         RANDOM
                     </Button>
                     <Button onClick={(e) => this.handleReset(this.state.fightersList)} variant="outlined" size="large"
