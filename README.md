@@ -49,7 +49,7 @@ Une fois la victoire / défaite validée, les boutons
 **Le score maximum est de 80, 
 Pensez vous être à la hauteur et relever ce défi en stream contre vos viewers ?!**
 
-** un gain à la clé si le score de 80 est atteint en stream  **
+Un gain à la clé si le score de 80 est atteint en stream :)
 
 Pour réinitialiser totalement l'application : F5
 
