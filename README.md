@@ -46,7 +46,10 @@ Une fois la victoire / défaite validée, les boutons
  - Les boutons gagné/ perdu se désactive jusqu'à la prochaine sélection de personnage.
 
 
-**Le score maximum est de 80, pouvez-vous relever ce défi en stream contre vos viewers ?!**
+**Le score maximum est de 80, 
+Pensez vous être à la hauteur et relever ce défi en stream contre vos viewers ?!**
+
+**< un gain à la clé si le score de 80 est atteint en stream > **
 
 Pour réinitialiser totalement l'application : F5
 
