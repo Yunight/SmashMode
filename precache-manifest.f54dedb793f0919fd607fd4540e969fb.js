@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bb7930b70da9b3185ae6c8b81efb4cb1",
+    "revision": "37855ba1a8ff00bf7af0b9c86287da9a",
     "url": "/SmashMode/index.html"
   },
   {
-    "revision": "ec0ee72351f3421af329",
-    "url": "/SmashMode/static/css/main.5ecd60fb.chunk.css"
+    "revision": "c0efc330becf8b7c123b",
+    "url": "/SmashMode/static/css/main.19059790.chunk.css"
   },
   {
-    "revision": "eeebf0a63db66febcacb",
-    "url": "/SmashMode/static/js/2.a5edeb7c.chunk.js"
+    "revision": "0bedd479df035e385fca",
+    "url": "/SmashMode/static/js/2.7f4a002c.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/SmashMode/static/js/2.a5edeb7c.chunk.js.LICENSE.txt"
+    "url": "/SmashMode/static/js/2.7f4a002c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ec0ee72351f3421af329",
-    "url": "/SmashMode/static/js/main.48448f60.chunk.js"
+    "revision": "c0efc330becf8b7c123b",
+    "url": "/SmashMode/static/js/main.e2c96904.chunk.js"
   },
   {
     "revision": "96bf559006c281cd2d92",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SmashMode/static/media/08_Pikachu_SSBU.0cd3aacf.png"
   },
   {
-    "revision": "ea5787f5e68d13a9eed3e7b5a5d70bc4",
-    "url": "/SmashMode/static/media/09_Luigi_SSBU.ea5787f5.png"
+    "revision": "0abe84a245caf02993ba417569f56c33",
+    "url": "/SmashMode/static/media/09_Luigi_SSBU.0abe84a2.png"
   },
   {
     "revision": "a5d893693f7fd4b087020de832e20fdd",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SmashMode/static/media/12_Jigglypuff_SSBU.330bbce1.png"
   },
   {
-    "revision": "60d4ba37b520c5d2e4805df14486af24",
-    "url": "/SmashMode/static/media/13_Peach_SSBU.60d4ba37.png"
+    "revision": "bf674c413724e6732e10192e5073c1d1",
+    "url": "/SmashMode/static/media/13_Peach_SSBU.bf674c41.png"
   },
   {
     "revision": "7f5a7c15fd0b79bffd745193a034a985",
@@ -132,8 +132,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SmashMode/static/media/25_Roy_SSBU.966dbfbd.png"
   },
   {
-    "revision": "5347790a8c388aaf40d5a1a4ccb80be9",
-    "url": "/SmashMode/static/media/25e_Fox_SSBU.5347790a.png"
+    "revision": "af69efb026f59f10bdd51af566bd989a",
+    "url": "/SmashMode/static/media/25e_Chrom_SSBU.af69efb0.png"
   },
   {
     "revision": "a35ed269d5bf96499f6c198ed2f3304a",
@@ -156,8 +156,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SmashMode/static/media/30_Wario_SSBU.6ee8dfe4.png"
   },
   {
-    "revision": "5e73c7b16a5503f14766945fb13c4fd1",
-    "url": "/SmashMode/static/media/31_Snake_SSBU.5e73c7b1.png"
+    "revision": "17896b550e0f727b7297aaa81483af85",
+    "url": "/SmashMode/static/media/31_Snake_SSBU.17896b55.png"
   },
   {
     "revision": "1a44fa87e2386f448129c2cba9ca28d5",
@@ -326,5 +326,17 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ca0408d2168193d1a248692aefcdc4b9",
     "url": "/SmashMode/static/media/Min_Min_SSBU.ca0408d2.png"
+  },
+  {
+    "revision": "07fee5d46cf60d84af0a0f8a52dabb8e",
+    "url": "/SmashMode/static/media/me.07fee5d4.jpg"
+  },
+  {
+    "revision": "f4751d90d3f3fe2fb348268b032f39b5",
+    "url": "/SmashMode/static/media/ssbu_landscape.f4751d90.jpg"
+  },
+  {
+    "revision": "49be4aa83b59e92e46ba03d2a46b7a9c",
+    "url": "/SmashMode/static/media/super_smash.49be4aa8.ttf"
   }
 ]);
