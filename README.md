@@ -50,3 +50,4 @@ Une fois la victoire / défaite validée, les boutons
 
 Pour réinitialiser totalement l'application : F5
 
+Si l'application fonctionne, je serais tenté d'ajouter d'autres modes ! me tentez pas !
