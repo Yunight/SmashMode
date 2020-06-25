@@ -37,7 +37,7 @@ Les boutons s'activent uniquement après avoir choisi un personnage sinon **ils 
 **Utilisation Solo Challenge** : 
 
 En cliquant sur !["RANDOM"](https://i.imgur.com/myPjIuX.png) 
-Le bouton va se désactiver et les boutons ![enter image description here](https://i.imgur.com/iDn1kIy.png) s'activent ! selon la victoire / défaite avec le personnage choisi vous validez en conséquence la résultat, le score en haut à gauche se mettra alors à jour par rapport à vos performances : ![enter image description here](https://i.imgur.com/NjsiEki.png)
+Le bouton va se désactiver et les boutons ![enter image description here](https://i.imgur.com/iDn1kIy.png) s'activent ! selon la victoire / défaite avec le personnage choisi vous validez en conséquence le résultat, le score en haut à gauche se mettra alors à jour par rapport à vos performances : ![enter image description here](https://i.imgur.com/NjsiEki.png)
 ![enter image description here](https://i.imgur.com/goViSPT.png)Lors d'une défaite, le **meilleur score gardera la meilleure performance** tandis que **le score actuel sera réinitialisé à 0**
 Une fois la victoire / défaite validée, les boutons 
 ![enter image description here](https://i.imgur.com/pT4vnGm.png)
