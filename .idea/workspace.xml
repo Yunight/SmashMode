@@ -105,7 +105,7 @@
       <workItem from="1593002888492" duration="1304000" />
       <workItem from="1593004203497" duration="38113000" />
       <workItem from="1593073827128" duration="8023000" />
-      <workItem from="1593086726518" duration="8214000" />
+      <workItem from="1593086726518" duration="8368000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -184,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593097726374</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="switcher color for 720p screen">
+      <created>1593100201078</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593100201078</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +206,8 @@
     <MESSAGE value="deploying github page" />
     <MESSAGE value="new mode added" />
     <MESSAGE value="small changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
+    <MESSAGE value="switcher color for 720p screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="switcher color for 720p screen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="460" y="95" key="#ESLint" timestamp="1593090739113">
@@ -214,10 +222,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="294" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593009822941" />
-    <state x="850" y="86" key="CommitChangelistDialog2" timestamp="1593097725549">
+    <state x="850" y="86" key="CommitChangelistDialog2" timestamp="1593100200270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="850" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593097725549" />
+    <state x="850" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593100200270" />
     <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1593025544570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -230,10 +238,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="352" y="77" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593015790530" />
-    <state x="452" y="183" key="Vcs.Push.Dialog.v2" timestamp="1593097728702">
+    <state x="452" y="183" key="Vcs.Push.Dialog.v2" timestamp="1593100204597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593097728702" />
+    <state x="452" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593100204597" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593088725435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
