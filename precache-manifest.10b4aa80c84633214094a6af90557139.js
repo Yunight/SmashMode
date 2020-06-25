@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e6a0b7f7a834a42dcd7a7e3d5f207b54",
+    "revision": "7d2266991e390829757e53adedb3b32c",
     "url": "/SmashModeOnline/index.html"
   },
   {
-    "revision": "56503b44cb6aca30ccf3",
+    "revision": "6d8b9ed951588cface95",
     "url": "/SmashModeOnline/static/css/2.2eeb4160.chunk.css"
   },
   {
-    "revision": "0bf6a21ecc388b595a65",
+    "revision": "04c02cb0e4ad013e46b4",
     "url": "/SmashModeOnline/static/css/main.ab172708.chunk.css"
   },
   {
-    "revision": "56503b44cb6aca30ccf3",
-    "url": "/SmashModeOnline/static/js/2.4cf40255.chunk.js"
+    "revision": "6d8b9ed951588cface95",
+    "url": "/SmashModeOnline/static/js/2.2ae25685.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/SmashModeOnline/static/js/2.4cf40255.chunk.js.LICENSE.txt"
+    "url": "/SmashModeOnline/static/js/2.2ae25685.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0bf6a21ecc388b595a65",
-    "url": "/SmashModeOnline/static/js/main.942e8333.chunk.js"
+    "revision": "e7102eef5b535890a341",
+    "url": "/SmashModeOnline/static/js/3.b7a5f374.chunk.js"
   },
   {
-    "revision": "0b15fe1539b5ccd32b4e",
-    "url": "/SmashModeOnline/static/js/runtime-main.4f3af502.js"
+    "revision": "287e48aeac3564a8b2b5685a67fb9216",
+    "url": "/SmashModeOnline/static/js/3.b7a5f374.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "04c02cb0e4ad013e46b4",
+    "url": "/SmashModeOnline/static/js/main.3c8b81a7.chunk.js"
+  },
+  {
+    "revision": "c63d279c0efeae60457d",
+    "url": "/SmashModeOnline/static/js/runtime-main.e599c420.js"
   },
   {
     "revision": "68056c5efc7a256d99a3ed8891bc5778",
@@ -446,5 +454,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "49be4aa83b59e92e46ba03d2a46b7a9c",
     "url": "/SmashModeOnline/static/media/super_smash.49be4aa8.ttf"
+  },
+  {
+    "revision": "574bbbb608f4195a0d26a44502cd49a7",
+    "url": "/SmashModeOnline/static/media/win.574bbbb6.mp3"
   }
 ]);
