@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SmashModeOnline/static/css/main.199aa601.chunk.css",
+    "main.css": "/SmashModeOnline/static/css/main.ab172708.chunk.css",
     "main.js": "/SmashModeOnline/static/js/main.b3049ee6.chunk.js",
     "main.js.map": "/SmashModeOnline/static/js/main.b3049ee6.chunk.js.map",
     "runtime-main.js": "/SmashModeOnline/static/js/runtime-main.4f3af502.js",
@@ -9,10 +9,10 @@
     "static/js/2.4cf40255.chunk.js": "/SmashModeOnline/static/js/2.4cf40255.chunk.js",
     "static/js/2.4cf40255.chunk.js.map": "/SmashModeOnline/static/js/2.4cf40255.chunk.js.map",
     "index.html": "/SmashModeOnline/index.html",
-    "precache-manifest.89bbf32c243faee41ae832826d05c439.js": "/SmashModeOnline/precache-manifest.89bbf32c243faee41ae832826d05c439.js",
+    "precache-manifest.4d1d318bed96fefb8e18816c64bd6cc5.js": "/SmashModeOnline/precache-manifest.4d1d318bed96fefb8e18816c64bd6cc5.js",
     "service-worker.js": "/SmashModeOnline/service-worker.js",
     "static/css/2.2eeb4160.chunk.css.map": "/SmashModeOnline/static/css/2.2eeb4160.chunk.css.map",
-    "static/css/main.199aa601.chunk.css.map": "/SmashModeOnline/static/css/main.199aa601.chunk.css.map",
+    "static/css/main.ab172708.chunk.css.map": "/SmashModeOnline/static/css/main.ab172708.chunk.css.map",
     "static/js/2.4cf40255.chunk.js.LICENSE.txt": "/SmashModeOnline/static/js/2.4cf40255.chunk.js.LICENSE.txt",
     "static/media/01_Mario_SSBU.png": "/SmashModeOnline/static/media/01_Mario_SSBU.68056c5e.png",
     "static/media/02_Donkey_Kong_SSBU.png": "/SmashModeOnline/static/media/02_Donkey_Kong_SSBU.c32a70a0.png",
@@ -99,7 +99,7 @@
     "static/js/runtime-main.4f3af502.js",
     "static/css/2.2eeb4160.chunk.css",
     "static/js/2.4cf40255.chunk.js",
-    "static/css/main.199aa601.chunk.css",
+    "static/css/main.ab172708.chunk.css",
     "static/js/main.b3049ee6.chunk.js"
   ]
 }
