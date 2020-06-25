@@ -7,15 +7,8 @@ class SingleFighter extends React.Component {
 
     render() {
         let {value, index} = this.props;
-
         function importAll(r) {
             return r.keys().map(r);
-        }
-
-        let audio = new Audio("/christmas.mp3");
-
-        const start = () => {
-            audio.play()
         }
 
         const images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));

@@ -6,15 +6,14 @@ import Container from "@material-ui/core/Container";
 import Button from "@material-ui/core/Button";
 import Snackbar from "@material-ui/core/Snackbar";
 import Alert from "@material-ui/lab/Alert";
-import Fab from "@material-ui/core/Fab";
 import Avatar from "@material-ui/core/Avatar";
 import me from '../otherPictures/me.jpg'
-import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
 import withStyles from "@material-ui/core/styles/withStyles";
-import purple from "@material-ui/core/colors/purple";
 import green from "@material-ui/core/colors/green";
+import useSound from "use-sound";
+import win from "../audios/win.mp3"
 
 
 class FightersBuild extends React.Component {
@@ -28,6 +27,7 @@ class FightersBuild extends React.Component {
             selectedFighter: "",
             isLoading: false,
             bestRecord: 0,
+            currentRecord: 0,
             switchActive: false,
         }
     }
@@ -38,7 +38,12 @@ class FightersBuild extends React.Component {
 
 
     handleRandom = (fighters_list) => {
+
+        this.handleClose();
         let selectedFighter = "";
+        this.setState((state, props) => ({
+            isLoading: true,
+        }));
 
         if (fighters_list.length > 0) {
             let randomChar = this.getRandomInt(fighters_list.length);
@@ -63,35 +68,48 @@ class FightersBuild extends React.Component {
 
         let tempFightersList = fighters_list;
         tempFightersList.map(fighter => {
-            return fighter.disabled = false;
+            if (fighter.id === "f079") {
+                return fighter;
+            } else {
+                return fighter.disabled = false;
+            }
+
         });
         this.setState((state, props) => ({
             fightersList: tempFightersList,
             selectedFighter: "",
-            bestRecord: 0,
+            currentRecord: 0,
         }));
     };
 
     handleWin = () => {
 
+        this.handleClose();
         this.setState((state, props) => ({
-            bestRecord: this.state.bestRecord+1,
+            currentRecord: this.state.currentRecord + 1,
             selectedFighter: "",
         }));
+
+
+        if (this.state.currentRecord >= this.state.bestRecord) {
+            this.setState((state, props) => ({
+                bestRecord: this.state.currentRecord + 1,
+            }));
+        }
+
+
     };
 
     handleLose = () => {
-
+        this.handleClose();
         this.setState((state, props) => ({
-            bestRecord: 0,
+            currentRecord: 0,
             selectedFighter: "",
         }));
     };
 
     handleStyle = (id, index) => {
         if (!this.state.switchActive) {
-
-
             let tempFightersList = this.state.fightersList;
             let selectedFighter = "";
 
@@ -128,13 +146,14 @@ class FightersBuild extends React.Component {
         this.setState((state, props) => ({
             switchActive: !this.state.switchActive,
             bestRecord: 0,
-            selectedFighter:""
+            selectedFighter: ""
         }));
 
 
     };
 
     render() {
+
 
         const PurpleSwitch = withStyles({
             switchBase: {
@@ -149,6 +168,12 @@ class FightersBuild extends React.Component {
             checked: {},
             track: {},
         })(Switch);
+
+        let audio = new Audio("./audios/win.mp3");
+
+        const start = () => {
+            audio.play()
+        };
 
         let listAvailable = this.state.fightersList.filter(fighter => fighter.disabled === false);
 
@@ -165,8 +190,13 @@ class FightersBuild extends React.Component {
                         </Button>
 
                         {this.state.switchActive &&
+                        <Button color="primary" variant="contained" className={"floatTitleLeftBest"}>
+                            Meilleur score : {this.state.bestRecord}
+                        </Button>
+                        }
+                        {this.state.switchActive &&
                         <Button color="primary" variant="contained" className={"floatTitleLeft"}>
-                            Meilleure Score : {this.state.bestRecord}
+                            Score actuel : {this.state.currentRecord}
                         </Button>
                         }
 
@@ -191,9 +221,9 @@ class FightersBuild extends React.Component {
                     {this.state.switchActive &&
                     <Button onClick={(e) => this.handleWin(this.state.fightersList)} variant="contained" size="large"
                             color="secondary"
-                            disabled={!this.state.selectedFighter.length>0}
+                            disabled={!this.state.selectedFighter.length > 0 && !this.state.isLoading}
                             className={"winBtn basicBtn"}
-                            >
+                    >
                         GAGNER
                     </Button>
                     }
@@ -202,8 +232,8 @@ class FightersBuild extends React.Component {
                     <Button onClick={(e) => this.handleLose(this.state.fightersList)} variant="contained" size="large"
                             color="secondary"
                             className={"loseBtn basicBtn"}
-                            disabled={!this.state.selectedFighter.length>0}
-                            >
+                            disabled={!this.state.selectedFighter.length > 0}
+                    >
                         PERDU
                     </Button>
                     }
@@ -211,7 +241,7 @@ class FightersBuild extends React.Component {
                     <Button onClick={(e) => this.handleReset(this.state.fightersList)} variant="contained" size="large"
                             color="secondary"
                             className={"resetBtn basicBtn"}
-                            >
+                    >
                         RESET
                     </Button>
                 </Container>
@@ -224,21 +254,22 @@ class FightersBuild extends React.Component {
                             style={{height: "120px", width: "350px"}}>
                         {listAvailable.length === 0 ? <h2 className={"bigTitle"}>VIDE</h2> :
                             <h1 className={"bigTitle"}>RANDOM</h1>}
+                            {this.BoopButton}
                     </Button>
 
 
                 </Container>
                 <Container style={{textAlign: 'center'}}>
                     <FormControlLabel className={"toggleSolo"}
-                        control={
-                            <PurpleSwitch
-                                checked={this.state.switchActive}
-                                onChange={(e) => this.handleChangeSwitch(this.state.fightersList)}
-                                name="checkedB"
-                                color="primary"
-                            />
-                        }
-                        label="SOLO RUN"
+                                      control={
+                                          <PurpleSwitch
+                                              checked={this.state.switchActive}
+                                              onChange={(e) => this.handleChangeSwitch(this.state.fightersList)}
+                                              name="checkedB"
+                                              color="primary"
+                                          />
+                                      }
+                                      label="SOLO CHALLENGE"
                     />
                 </Container>
 

@@ -79,16 +79,23 @@ body {
     font-family: 'SuperSmash', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', serif;
 }
 
+.floatTitleLeftBest {
+    float: left;
+    background-color: coral !important;
+    margin-right: 20px !important;
+}
+
 .floatTitleLeft {
     float: left;
     background-color: deepskyblue !important;
     margin-left: 50px;
+    margin-right: 20px;
     margin-bottom: 50px;
 }
 
 .floatTitleRight {
     float: right;
-    background-color: deepskyblue !important;
+    background-color: darkcyan !important;
     margin-left: 50px;
     margin-bottom: 50px;
 
@@ -114,6 +121,27 @@ body {
     .customTitle {
         margin-top: 10px !important;
         margin-bottom: 10px !important;
+    }
+
+    .floatTitleLeftBest {
+        width: 100%;
+        background-color: coral !important;
+        margin-right: 20px !important;
+    }
+
+    .floatTitleLeft {
+        width: 100%;
+        margin-top: 10px !important;
+    }
+
+    .floatTitleRight {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        width: 100%;
+
+    }
+    .toggleSolo{
+        color:black !important;
     }
 
 }

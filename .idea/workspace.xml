@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/audios/win.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/FightersBuild.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FightersBuild.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SingleFighter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SingleFighter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fighter_data/fighters.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/fighter_data/fighters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,17 +70,17 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\night\WebstormProjects\smashnol\src\otherPictures" />
-      <recent name="C:\Users\night\WebstormProjects\smashnol\src" />
-      <recent name="C:\Users\night\WebstormProjects\smashnol\src\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\night\WebstormProjects\smashnol\src\audios" />
       <recent name="C:\Users\night\WebstormProjects\smashnol\src\images" />
       <recent name="C:\Users\night\WebstormProjects\smashnol\src\otherPictures" />
       <recent name="C:\Users\night\WebstormProjects\smashnol\src\fonts" />
       <recent name="C:\Users\night\WebstormProjects\smashnol\src" />
-      <recent name="C:\Users\night\WebstormProjects\smashnol\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\night\WebstormProjects\smashnol\src\otherPictures" />
+      <recent name="C:\Users\night\WebstormProjects\smashnol\src" />
+      <recent name="C:\Users\night\WebstormProjects\smashnol\src\images" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -107,6 +112,7 @@
       <workItem from="1593002888492" duration="1304000" />
       <workItem from="1593004203497" duration="38113000" />
       <workItem from="1593073827128" duration="8023000" />
+      <workItem from="1593086726518" duration="4082000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -182,10 +188,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="new mode added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="95" key="#ESLint" timestamp="1593000595947">
+    <state x="460" y="95" key="#ESLint" timestamp="1593090739113">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="460" y="95" key="#ESLint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593000595947" />
+    <state x="460" y="95" key="#ESLint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593090739113" />
     <state x="452" y="95" key="#Notifications" timestamp="1593003145775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -214,6 +220,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593081723329" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593088725435">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593088725435" />
     <state x="739" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593025688986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
