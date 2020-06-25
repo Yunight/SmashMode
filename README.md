@@ -21,7 +21,7 @@ Une fois tous les personnages sélectionnés nous aurons cet écran là :
 
 Il y a ensuite un nouveau mode que j'ai ajouté que j'appellerai **"SOLO CHALLENGE"**
 Pour activer ce mode il faut cliquer sur le switcher situé sous **"RANDOM"** ![enter image description here](https://i.imgur.com/UWMTW2J.png)L'écran va alors changer et devenir comme ceci :
-![enter image description here](https://i.imgur.com/6VCSPpR.png)Ce mode consiste à se lancer un défi de faire le plus de victoires d'affilés avec le bouton **"RANDOM"**, le clic manuel sur les personnages on été désactivé pour éviter de tricher hehe.
+![enter image description here](https://i.imgur.com/6VCSPpR.png)Ce mode consiste à se lancer un défi de faire le plus de victoires d'affilés avec le bouton **"RANDOM"**, le clic manuel sur les personnages a été désactivé pour éviter de tricher hehe.
 
 En haut à gauche :
 
