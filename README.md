@@ -25,9 +25,11 @@ En haut à gauche :
 
  - **Meilleur Score : Meilleur score de la session**
  - **Score Actuel : Meilleure score pour la run actuelle**
+ 
+Au dessus du bouton "RANDOM"
  - **Bouton gagné : valide une victoire et augmente le score actuel et/ou le meilleure score**
  - **Bouton perdu : valide une défaite, réinitialise le score et casse la chaine de victoires**
- - 
+ 
 Les boutons s'activent uniquement après avoir choisi un personnage sinon **ils sont grisés**
 
 **Utilisation Solo Challenge** : 
