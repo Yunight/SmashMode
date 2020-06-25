@@ -68,6 +68,7 @@ class FightersBuild extends React.Component {
         this.setState((state, props) => ({
             fightersList: tempFightersList,
             selectedFighter: "",
+            bestRecord: 0,
         }));
     };
 
