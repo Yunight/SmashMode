@@ -1,5 +1,7 @@
 Bienvenue sur l'appli "SmashModeOnline"
 
+Si jamais vous voulez remonter une information / bugs  ou juste discuter avec moi !(https://twitter.com/NightOfLunaTV)
+
 Le but de l'application est de permettre aux streamers Smash Ultimate d'animer leur stream avec les viewers, en se donnant des **Challenges / Défis**
 
 Actuellement il y a le mode **"Smash Down"**, qui consiste à sélectionner un personnage aléatoire pour que l'utilisateur le joue, ce personnage sera ensuite **désactivé** dans la rotation du bouton **"RANDOM"**
