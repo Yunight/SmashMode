@@ -38,5 +38,9 @@ Une fois la victoire / défaite validée, le bouton ![enter image description he
 
  - "RANDOM" s'active de nouveau
  - Les boutons gagné/ perdu de désactive jusqu'à la prochaine sélection de personnage.
+
+
 **Le score maximum est de 80 mais pouvez-vous relevez ce défi en stream contre vos viewers ?!**
+
+Pour réinitialiser totalement l'application : F5
 
