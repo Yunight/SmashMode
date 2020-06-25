@@ -109,16 +109,12 @@ body {
 }
 
 .toggleSolo{
-    color:mediumseagreen !important;
-
+    color:mediumseagreen;
 }
 
 
 @media (max-width: 1281px) {
 
-    .toggleSolo{
-        color:deepskyblue !important;
-    }
 
 }
 

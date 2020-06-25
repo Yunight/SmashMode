@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +106,7 @@
       <workItem from="1593002888492" duration="1304000" />
       <workItem from="1593004203497" duration="38113000" />
       <workItem from="1593073827128" duration="8023000" />
-      <workItem from="1593086726518" duration="8368000" />
+      <workItem from="1593086726518" duration="9267000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -191,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593100201078</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="switcher color for 720p screen">
+      <created>1593100357054</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593100357054</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,10 +230,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="294" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593009822941" />
-    <state x="850" y="86" key="CommitChangelistDialog2" timestamp="1593100200270">
+    <state x="850" y="86" key="CommitChangelistDialog2" timestamp="1593100356095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="850" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593100200270" />
+    <state x="850" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593100356095" />
     <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1593025544570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
