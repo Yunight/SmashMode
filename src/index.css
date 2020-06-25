@@ -114,6 +114,14 @@ body {
 }
 
 
+@media (max-width: 1281px) {
+
+    .toggleSolo{
+        color:deepskyblue !important;
+    }
+
+}
+
 @media (max-width: 600px) {
     .topContainer {
         height: 150px;
