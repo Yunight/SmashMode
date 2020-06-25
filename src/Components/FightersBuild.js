@@ -65,7 +65,7 @@ class FightersBuild extends React.Component {
     };
 
     handleReset = (fighters_list) => {
-
+        this.handleClose();
         let tempFightersList = fighters_list;
         tempFightersList.map(fighter => {
             if (fighter.id === "f079") {
