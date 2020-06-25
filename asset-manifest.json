@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/SmashMode/static/css/main.19059790.chunk.css",
-    "main.js": "/SmashMode/static/js/main.e2c96904.chunk.js",
-    "main.js.map": "/SmashMode/static/js/main.e2c96904.chunk.js.map",
+    "main.css": "/SmashMode/static/css/main.d96db450.chunk.css",
+    "main.js": "/SmashMode/static/js/main.bb7d407b.chunk.js",
+    "main.js.map": "/SmashMode/static/js/main.bb7d407b.chunk.js.map",
     "runtime-main.js": "/SmashMode/static/js/runtime-main.2a39a903.js",
     "runtime-main.js.map": "/SmashMode/static/js/runtime-main.2a39a903.js.map",
-    "static/js/2.7f4a002c.chunk.js": "/SmashMode/static/js/2.7f4a002c.chunk.js",
-    "static/js/2.7f4a002c.chunk.js.map": "/SmashMode/static/js/2.7f4a002c.chunk.js.map",
+    "static/css/2.cda0f304.chunk.css": "/SmashMode/static/css/2.cda0f304.chunk.css",
+    "static/js/2.639e1853.chunk.js": "/SmashMode/static/js/2.639e1853.chunk.js",
+    "static/js/2.639e1853.chunk.js.map": "/SmashMode/static/js/2.639e1853.chunk.js.map",
     "index.html": "/SmashMode/index.html",
-    "precache-manifest.f54dedb793f0919fd607fd4540e969fb.js": "/SmashMode/precache-manifest.f54dedb793f0919fd607fd4540e969fb.js",
+    "precache-manifest.a7284ea5cbd432ee978c32c88c65f9f2.js": "/SmashMode/precache-manifest.a7284ea5cbd432ee978c32c88c65f9f2.js",
     "service-worker.js": "/SmashMode/service-worker.js",
-    "static/css/main.19059790.chunk.css.map": "/SmashMode/static/css/main.19059790.chunk.css.map",
-    "static/js/2.7f4a002c.chunk.js.LICENSE.txt": "/SmashMode/static/js/2.7f4a002c.chunk.js.LICENSE.txt",
+    "static/css/2.cda0f304.chunk.css.map": "/SmashMode/static/css/2.cda0f304.chunk.css.map",
+    "static/css/main.d96db450.chunk.css.map": "/SmashMode/static/css/main.d96db450.chunk.css.map",
+    "static/js/2.639e1853.chunk.js.LICENSE.txt": "/SmashMode/static/js/2.639e1853.chunk.js.LICENSE.txt",
     "static/media/01_Mario_SSBU.png": "/SmashMode/static/media/01_Mario_SSBU.68056c5e.png",
     "static/media/02_Donkey_Kong_SSBU.png": "/SmashMode/static/media/02_Donkey_Kong_SSBU.c32a70a0.png",
     "static/media/03_Link_SSBU.png": "/SmashMode/static/media/03_Link_SSBU.8298f471.png",
@@ -63,6 +65,8 @@
     "static/media/49_Little_Mac_SSBU.png": "/SmashMode/static/media/49_Little_Mac_SSBU.cbefb630.png",
     "static/media/50_Greninja_SSBU.png": "/SmashMode/static/media/50_Greninja_SSBU.c93751b6.png",
     "static/media/51_Mii_Brawler_SSBU.png": "/SmashMode/static/media/51_Mii_Brawler_SSBU.f505847c.png",
+    "static/media/52_Mii_Swordfighter_SSBU.png": "/SmashMode/static/media/52_Mii_Swordfighter_SSBU.2a0dc420.png",
+    "static/media/53_Mii_Gunner_SSBU.png": "/SmashMode/static/media/53_Mii_Gunner_SSBU.3dfd5630.png",
     "static/media/54_Palutena_SSBU.png": "/SmashMode/static/media/54_Palutena_SSBU.afd904e2.png",
     "static/media/55_Pac-Man_SSBU.png": "/SmashMode/static/media/55_Pac-Man_SSBU.01a8ea14.png",
     "static/media/56_Robin_SSBU.png": "/SmashMode/static/media/56_Robin_SSBU.aef8dda5.png",
@@ -88,13 +92,14 @@
     "static/media/74_Terry_SSBU.png": "/SmashMode/static/media/74_Terry_SSBU.1b2cc483.png",
     "static/media/75_Byleth_SSBU.png": "/SmashMode/static/media/75_Byleth_SSBU.610298fe.png",
     "static/media/Min_Min_SSBU.png": "/SmashMode/static/media/Min_Min_SSBU.ca0408d2.png",
-    "static/media/me.jpg": "/SmashMode/static/media/me.07fee5d4.jpg",
-    "static/media/index.css": "/SmashMode/static/media/super_smash.49be4aa8.ttf"
+    "static/media/index.css": "/SmashMode/static/media/super_smash.49be4aa8.ttf",
+    "static/media/me.jpg": "/SmashMode/static/media/me.07fee5d4.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2a39a903.js",
-    "static/js/2.7f4a002c.chunk.js",
-    "static/css/main.19059790.chunk.css",
-    "static/js/main.e2c96904.chunk.js"
+    "static/css/2.cda0f304.chunk.css",
+    "static/js/2.639e1853.chunk.js",
+    "static/css/main.d96db450.chunk.css",
+    "static/js/main.bb7d407b.chunk.js"
   ]
 }
