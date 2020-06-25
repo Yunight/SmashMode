@@ -54,3 +54,4 @@ Si l'application fonctionne, je serais tenté d'ajouter d'autres modes ! me tent
 
 Crédits : 
 - BG image : Callum Nakajima
+- Characters : Nintendo
