@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/SmashModeOnline/static/css/main.ce00df92.chunk.css",
-    "main.js": "/SmashModeOnline/static/js/main.b11e769d.chunk.js",
-    "main.js.map": "/SmashModeOnline/static/js/main.b11e769d.chunk.js.map",
+    "main.css": "/SmashModeOnline/static/css/main.199aa601.chunk.css",
+    "main.js": "/SmashModeOnline/static/js/main.b3049ee6.chunk.js",
+    "main.js.map": "/SmashModeOnline/static/js/main.b3049ee6.chunk.js.map",
     "runtime-main.js": "/SmashModeOnline/static/js/runtime-main.4f3af502.js",
     "runtime-main.js.map": "/SmashModeOnline/static/js/runtime-main.4f3af502.js.map",
     "static/css/2.2eeb4160.chunk.css": "/SmashModeOnline/static/css/2.2eeb4160.chunk.css",
-    "static/js/2.639e1853.chunk.js": "/SmashModeOnline/static/js/2.639e1853.chunk.js",
-    "static/js/2.639e1853.chunk.js.map": "/SmashModeOnline/static/js/2.639e1853.chunk.js.map",
+    "static/js/2.4cf40255.chunk.js": "/SmashModeOnline/static/js/2.4cf40255.chunk.js",
+    "static/js/2.4cf40255.chunk.js.map": "/SmashModeOnline/static/js/2.4cf40255.chunk.js.map",
     "index.html": "/SmashModeOnline/index.html",
-    "precache-manifest.87b35ace261dd3bb85950a953cb6aaa8.js": "/SmashModeOnline/precache-manifest.87b35ace261dd3bb85950a953cb6aaa8.js",
+    "precache-manifest.89bbf32c243faee41ae832826d05c439.js": "/SmashModeOnline/precache-manifest.89bbf32c243faee41ae832826d05c439.js",
     "service-worker.js": "/SmashModeOnline/service-worker.js",
     "static/css/2.2eeb4160.chunk.css.map": "/SmashModeOnline/static/css/2.2eeb4160.chunk.css.map",
-    "static/css/main.ce00df92.chunk.css.map": "/SmashModeOnline/static/css/main.ce00df92.chunk.css.map",
-    "static/js/2.639e1853.chunk.js.LICENSE.txt": "/SmashModeOnline/static/js/2.639e1853.chunk.js.LICENSE.txt",
+    "static/css/main.199aa601.chunk.css.map": "/SmashModeOnline/static/css/main.199aa601.chunk.css.map",
+    "static/js/2.4cf40255.chunk.js.LICENSE.txt": "/SmashModeOnline/static/js/2.4cf40255.chunk.js.LICENSE.txt",
     "static/media/01_Mario_SSBU.png": "/SmashModeOnline/static/media/01_Mario_SSBU.68056c5e.png",
     "static/media/02_Donkey_Kong_SSBU.png": "/SmashModeOnline/static/media/02_Donkey_Kong_SSBU.c32a70a0.png",
     "static/media/03_Link_SSBU.png": "/SmashModeOnline/static/media/03_Link_SSBU.8298f471.png",
@@ -98,8 +98,8 @@
   "entrypoints": [
     "static/js/runtime-main.4f3af502.js",
     "static/css/2.2eeb4160.chunk.css",
-    "static/js/2.639e1853.chunk.js",
-    "static/css/main.ce00df92.chunk.css",
-    "static/js/main.b11e769d.chunk.js"
+    "static/js/2.4cf40255.chunk.js",
+    "static/css/main.199aa601.chunk.css",
+    "static/js/main.b3049ee6.chunk.js"
   ]
 }
