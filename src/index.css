@@ -1,13 +1,119 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'SuperSmash';
+    src: local('SuperSmash'), url('./fonts/super_smash.ttf') format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+    margin: 0;
+    font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background-image: url('otherPictures/SmashUltimate.jpg');
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.bobeffect {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.bobeffect:hover, .bobeffect:focus, .bobeffect:active {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+
+.resetBtn {
+
+    background-color: darkgrey !important;
+
+}
+
+.basicBtn{
+    height: 50px !important;
+    width: 100px !important;
+    font-size: 20px !important;
+    margin: 10px !important;
+}
+
+.winBtn{
+    background-color: mediumseagreen !important;
+}
+
+.loseBtn{
+    background-color: indianred !important;
+}
+
+.MuiButtonBase-root:disabled {
+    cursor: not-allowed;
+    pointer-events: auto;
+}
+
+.iconsize {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.bigTitle {
+    font-size: 50px;
+    margin: auto;
+    font-family: 'Roboto', serif;
+}
+
+.customTitle {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'SuperSmash', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', serif;
+}
+
+.floatTitleLeft {
+    float: left;
+    background-color: deepskyblue !important;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.floatTitleRight {
+    float: right;
+    background-color: deepskyblue !important;
+    margin-left: 50px;
+    margin-bottom: 50px;
+
+    width: 250px;
+    font-size: 30px;
+}
+
+.topContainer {
+    text-align: center;
+    padding: 10px;
+}
+
+.toggleSolo{
+    color:white;
+
+}
+
+
+@media (max-width: 600px) {
+    .topContainer {
+        height: 150px;
+    }
+    .customTitle {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
 }
