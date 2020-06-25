@@ -19,12 +19,12 @@ Une fois tous les personnages sélectionnés nous aurons cet écran là :
 
 Il y a ensuite un nouveau mode que j'ai ajouté que j'appellerai **"SOLO CHALLENGE"**
 Pour activer ce mode il faut cliquer sur le switcher situé sous **"RANDOM"** ![enter image description here](https://i.imgur.com/UWMTW2J.png)L'écran va alors changer et devenir comme ceci :
-![enter image description here](https://i.imgur.com/0c1NyYj.png)Ce mode consiste à se lancer un défi de faire le plus de victoires d'affilés avec le bouton **"RANDOM"**, le clic manuel sur les personnages on été désactivé pour éviter de tricher hehe.
+![enter image description here](https://i.imgur.com/6VCSPpR.png)Ce mode consiste à se lancer un défi de faire le plus de victoires d'affilés avec le bouton **"RANDOM"**, le clic manuel sur les personnages on été désactivé pour éviter de tricher hehe.
 En haut à gauche :
 
  - **Meilleur Score : Meilleur score de la session**
  - **Score Actuel : Meilleure score pour la run actuelle**
- - **Bouton gagner : valide une victoire et augmente le score actuel et/ou le meilleure score**
+ - **Bouton gagné : valide une victoire et augmente le score actuel et/ou le meilleure score**
  - **Bouton perdu : valide une défaite, réinitialise le score et casse la chaine de victoires**
  - 
 Les boutons s'activent uniquement après avoir choisi un personnage sinon **ils sont grisés**
@@ -32,5 +32,11 @@ Les boutons s'activent uniquement après avoir choisi un personnage sinon **ils 
 **Utilisation Solo Challenge** : 
 
 En cliquant sur !["RANDOM"](https://i.imgur.com/myPjIuX.png) 
-Le bouton va se 
-![enter image description here](https://i.imgur.com/goViSPT.png)
+Le bouton va se désactiver et les boutons ![enter image description here](https://i.imgur.com/iDn1kIy.png) s'activent ! selon la victoire / défaite avec le personnage choisi vous validez en conséquence la résultat, le score en haut à gauche se mettra alors à jour par rapport à vos performances : ![enter image description here](https://i.imgur.com/NjsiEki.png)
+![enter image description here](https://i.imgur.com/goViSPT.png)Lors d'une défaite, le **meilleur score gardera la meilleure performance** tandis que **le score actuel sera réinitialisé à 0**
+Une fois la victoire / défaite validée, le bouton ![enter image description here](https://i.imgur.com/pT4vnGm.png)
+
+ - "RANDOM" s'active de nouveau
+ - Les boutons gagné/ perdu de désactive jusqu'à la prochaine sélection de personnage.
+**Le score maximum est de 80 mais pouvez-vous relevez ce défi en stream contre vos viewers ?!**
+
