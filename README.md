@@ -1,6 +1,6 @@
 Bienvenue sur l'appli "SmashModeOnline"
 
-Si jamais vous voulez remonter une information / bugs  ou juste discuter avec moi !(https://twitter.com/NightOfLunaTV)
+Si jamais vous voulez remonter une information / bugs  ou juste discuter avec moi https://twitter.com/NightOfLunaTV
 
 Le but de l'application est de permettre aux streamers Smash Ultimate d'animer leur stream avec les viewers, en se donnant des **Challenges / Défis**
 
