@@ -224,7 +224,7 @@ class FightersBuild extends React.Component {
                             disabled={!this.state.selectedFighter.length > 0 && !this.state.isLoading}
                             className={"winBtn basicBtn"}
                     >
-                        GAGNER
+                        GAGNÉ
                     </Button>
                     }
 
