@@ -38,7 +38,7 @@ Une fois la victoire / défaite validée, les boutons
 ![enter image description here](https://i.imgur.com/pT4vnGm.png)
 
  - "RANDOM" s'active de nouveau
- - Les boutons gagné/ perdu de désactive jusqu'à la prochaine sélection de personnage.
+ - Les boutons gagné/ perdu se désactive jusqu'à la prochaine sélection de personnage.
 
 
 **Le score maximum est de 80 mais pouvez-vous relevez ce défi en stream contre vos viewers ?!**
