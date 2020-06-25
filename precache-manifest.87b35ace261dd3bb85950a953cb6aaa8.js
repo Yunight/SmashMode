@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a38abbc2ff9d54a0d574ed7cce9b21c4",
+    "revision": "339fd15735047162f0c2c18cdeda250f",
     "url": "/SmashModeOnline/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SmashModeOnline/static/css/2.2eeb4160.chunk.css"
   },
   {
-    "revision": "36e162a99da5895a222b",
+    "revision": "629c6b4a618f2b95dff8",
     "url": "/SmashModeOnline/static/css/main.ce00df92.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SmashModeOnline/static/js/2.639e1853.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "36e162a99da5895a222b",
-    "url": "/SmashModeOnline/static/js/main.9573e241.chunk.js"
+    "revision": "629c6b4a618f2b95dff8",
+    "url": "/SmashModeOnline/static/js/main.b11e769d.chunk.js"
   },
   {
     "revision": "0b15fe1539b5ccd32b4e",
