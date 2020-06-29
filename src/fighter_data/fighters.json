@@ -3093,7 +3093,7 @@
     "color": "#ffff5a",
     "colorType": "B",
     "colorOrder": "0",
-    "disabled": true,
+    "disabled": false,
     "displayNameEnSecondary": "MIN MIN",
     "fileSecondary": "minmin",
     "slug": "cat02_fighter_76"
