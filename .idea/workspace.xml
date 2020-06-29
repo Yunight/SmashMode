@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="" />
+    <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Components/FightersBuild.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FightersBuild.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +106,7 @@
       <workItem from="1593004203497" duration="38113000" />
       <workItem from="1593073827128" duration="8023000" />
       <workItem from="1593086726518" duration="11109000" />
-      <workItem from="1593433318881" duration="4014000" />
+      <workItem from="1593433318881" duration="4105000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -211,7 +213,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593458403597</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Chrom img fixed">
+      <created>1593458881826</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1593458881826</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Chrom img fixed">
+      <created>1593458890444</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1593458890444</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +244,8 @@
     <MESSAGE value="small changes" />
     <MESSAGE value="switcher color for 720p screen" />
     <MESSAGE value="minmin enable !" />
-    <option name="LAST_COMMIT_MESSAGE" value="minmin enable !" />
+    <MESSAGE value="Chrom img fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chrom img fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="460" y="95" key="#ESLint" timestamp="1593090739113">
@@ -243,10 +260,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="294" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593009822941" />
-    <state x="850" y="86" key="CommitChangelistDialog2" timestamp="1593458880958">
+    <state x="850" y="86" key="CommitChangelistDialog2" timestamp="1593458889487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="850" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593458880958" />
+    <state x="850" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593458889487" />
     <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1593442137549">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -259,10 +276,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="352" y="77" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593015790530" />
-    <state x="452" y="183" key="Vcs.Push.Dialog.v2" timestamp="1593458406718">
+    <state x="452" y="183" key="Vcs.Push.Dialog.v2" timestamp="1593458893270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593458406718" />
+    <state x="452" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593458893270" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593088725435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -271,10 +288,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593025688986" />
-    <state x="591" y="163" width="738" height="714" key="find.popup" timestamp="1593080455197">
+    <state x="591" y="163" width="738" height="714" key="find.popup" timestamp="1593458937366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="591" y="163" width="738" height="714" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593080455197" />
+    <state x="591" y="163" width="738" height="714" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593458937366" />
     <state x="532" y="237" key="run.anything.popup" timestamp="1593078746879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
