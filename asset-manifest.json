@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SmashModeOnline/static/css/main.de2606de.chunk.css",
-    "main.js": "/SmashModeOnline/static/js/main.c0e42ab0.chunk.js",
-    "main.js.map": "/SmashModeOnline/static/js/main.c0e42ab0.chunk.js.map",
+    "main.js": "/SmashModeOnline/static/js/main.99892a2b.chunk.js",
+    "main.js.map": "/SmashModeOnline/static/js/main.99892a2b.chunk.js.map",
     "runtime-main.js": "/SmashModeOnline/static/js/runtime-main.e599c420.js",
     "runtime-main.js.map": "/SmashModeOnline/static/js/runtime-main.e599c420.js.map",
     "static/css/2.2eeb4160.chunk.css": "/SmashModeOnline/static/css/2.2eeb4160.chunk.css",
@@ -11,7 +11,7 @@
     "static/js/3.b7a5f374.chunk.js": "/SmashModeOnline/static/js/3.b7a5f374.chunk.js",
     "static/js/3.b7a5f374.chunk.js.map": "/SmashModeOnline/static/js/3.b7a5f374.chunk.js.map",
     "index.html": "/SmashModeOnline/index.html",
-    "precache-manifest.c4892f420be97632ca26c065214b112b.js": "/SmashModeOnline/precache-manifest.c4892f420be97632ca26c065214b112b.js",
+    "precache-manifest.25717dbee40d409fbd0878eec1a0b30f.js": "/SmashModeOnline/precache-manifest.25717dbee40d409fbd0878eec1a0b30f.js",
     "service-worker.js": "/SmashModeOnline/service-worker.js",
     "static/css/2.2eeb4160.chunk.css.map": "/SmashModeOnline/static/css/2.2eeb4160.chunk.css.map",
     "static/css/main.de2606de.chunk.css.map": "/SmashModeOnline/static/css/main.de2606de.chunk.css.map",
@@ -104,6 +104,6 @@
     "static/css/2.2eeb4160.chunk.css",
     "static/js/2.2ae25685.chunk.js",
     "static/css/main.de2606de.chunk.css",
-    "static/js/main.c0e42ab0.chunk.js"
+    "static/js/main.99892a2b.chunk.js"
   ]
 }
