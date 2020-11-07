@@ -3097,6 +3097,46 @@
     "displayNameEnSecondary": "MIN MIN",
     "fileSecondary": "minmin",
     "slug": "cat02_fighter_76"
-  }
+  },
+      {
+      "id": "f080",
+      "displayNum": "77",
+      "dlc": 1,
+      "new": 1,
+      "displayName": {
+        "ja_JP": "スティーブ / <br>アレックス",
+        "en_US": "STEVE / ALEX",
+        "en_GB": "STEVE / ALEX",
+        "en_AU": "STEVE / ALEX",
+        "fr_FR": "STEVE / ALEX",
+        "fr_CA": "STEVE / ALEX",
+        "es_ES": "STEVE / ALEX",
+        "es_LA": "STEVE Y ALEX",
+        "de_DE": "STEVE & ALEX",
+        "it_IT": "STEVE / ALEX",
+        "nl_NL": "STEVE / ALEX",
+        "ru_RU": "СТИВ / АЛЕКС",
+        "ko_KR": "스티브 / 알렉스",
+        "TC": "史提夫 / 愛莉克斯",
+        "SC": "史蒂夫 / 艾莉克斯"
+      },
+      "url": "77",
+      "displayNameJa": "スティーブ / アレックス",
+      "serialNum": false,
+      "displayNameEn": "STEVE / ALEX",
+      "displayNameKo": "스티브 / 알렉스",
+      "displayNameSc": "史蒂夫 / 艾莉克斯",
+      "displayNameTc": "史提夫 / 愛莉克斯",
+      "file": "steve",
+      "series": "minecraft",
+      "dash": 0,
+      "color": "#ffff5a",
+      "colorType": "B",
+      "colorOrder": "0",
+      "type": "",
+      "displayNameEnSecondary": "STEVE / ALEX",
+      "fileSecondary": "steve",
+      "slug": "cat02_fighter_77"
+    }
 ]
 
