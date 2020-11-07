@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "758264a02c6c378e33c1cb1cdc737c9e",
+    "revision": "d635cbc42222cd78e34821f47b065f6e",
     "url": "/SmashModeOnline/index.html"
   },
   {
-    "revision": "56899b1a885d3976ce5c",
+    "revision": "715c7104da7d1c5dce7b",
     "url": "/SmashModeOnline/static/css/2.2eeb4160.chunk.css"
   },
   {
-    "revision": "5aed109d117a392ba9a2",
-    "url": "/SmashModeOnline/static/css/main.de2606de.chunk.css"
+    "revision": "b6961de5040bf4b4f44b",
+    "url": "/SmashModeOnline/static/css/main.77e321cc.chunk.css"
   },
   {
-    "revision": "56899b1a885d3976ce5c",
-    "url": "/SmashModeOnline/static/js/2.f3f21788.chunk.js"
+    "revision": "715c7104da7d1c5dce7b",
+    "url": "/SmashModeOnline/static/js/2.10ca4129.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/SmashModeOnline/static/js/2.f3f21788.chunk.js.LICENSE.txt"
+    "url": "/SmashModeOnline/static/js/2.10ca4129.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ab03afc836e9b1636b5c",
-    "url": "/SmashModeOnline/static/js/3.91bc3ee1.chunk.js"
+    "revision": "b8c4a71011bc8a2aa87b",
+    "url": "/SmashModeOnline/static/js/3.6cfb804e.chunk.js"
   },
   {
     "revision": "287e48aeac3564a8b2b5685a67fb9216",
-    "url": "/SmashModeOnline/static/js/3.91bc3ee1.chunk.js.LICENSE.txt"
+    "url": "/SmashModeOnline/static/js/3.6cfb804e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5aed109d117a392ba9a2",
-    "url": "/SmashModeOnline/static/js/main.8a386761.chunk.js"
+    "revision": "b6961de5040bf4b4f44b",
+    "url": "/SmashModeOnline/static/js/main.3a41405a.chunk.js"
   },
   {
-    "revision": "10cab3f7e93a28787327",
-    "url": "/SmashModeOnline/static/js/runtime-main.84c8ca89.js"
+    "revision": "e558dab2dab2e0da6408",
+    "url": "/SmashModeOnline/static/js/runtime-main.be80cc78.js"
   },
   {
     "revision": "68056c5efc7a256d99a3ed8891bc5778",
@@ -300,12 +300,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SmashModeOnline/static/media/65_Ridley_SSBU.28d8326b.png"
   },
   {
-    "revision": "3d267d0c69724efdd61a96e554f355eb",
-    "url": "/SmashModeOnline/static/media/66_Richter_SSBU.3d267d0c.png"
+    "revision": "2155e2e56e12f653a520bf5e81693f10",
+    "url": "/SmashModeOnline/static/media/66a_Simon_SSBU.2155e2e5.png"
   },
   {
-    "revision": "2155e2e56e12f653a520bf5e81693f10",
-    "url": "/SmashModeOnline/static/media/66_Simon_SSBU.2155e2e5.png"
+    "revision": "3d267d0c69724efdd61a96e554f355eb",
+    "url": "/SmashModeOnline/static/media/66b_Richter_SSBU.3d267d0c.png"
   },
   {
     "revision": "9e541e42563f0110b4705658839cfa07",
@@ -345,7 +345,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "ca0408d2168193d1a248692aefcdc4b9",
-    "url": "/SmashModeOnline/static/media/Min_Min_SSBU.ca0408d2.png"
+    "url": "/SmashModeOnline/static/media/76_Min_Min_SSBU.ca0408d2.png"
   },
   {
     "revision": "74532ffa98929f03ad0d3c45079b7570",
