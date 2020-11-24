@@ -2,6 +2,7 @@ import React,{useEffect} from "react";
 import FightersBuild from "./Components/FightersBuild";
 import ReactGA from "react-ga";  //Google Analytics
 
+
 export default function SmashNOL() {
 
     useEffect(() => {

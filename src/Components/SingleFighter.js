@@ -25,7 +25,7 @@ class SingleFighter extends React.Component {
 
         return (
             <Grid key={value.id} item>
-                <Card style={{textAlign: "center", width: '100px', height: '100px'}}>
+                <Card style={{textAlign: "center", width: '96px', height: '96px'}}>
                     <CardActionArea>
                         <img className={"bobeffect"} onClick={(e) => this.props.handleStyle(value.id, index)} style={styleSwitch}
                              src={images[this.props.index]}

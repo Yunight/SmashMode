@@ -12,9 +12,12 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
 import withStyles from "@material-ui/core/styles/withStyles";
 import green from "@material-ui/core/colors/green";
-import useSound from "use-sound";
-import win from "../audios/win.mp3"
-
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardContent from "@material-ui/core/CardContent";
+import Typography from "@material-ui/core/Typography";
+import bgimg from "../otherPictures/character_bg.png" ;
+import random from "../otherPictures/random.png"
 
 class FightersBuild extends React.Component {
 
@@ -24,11 +27,13 @@ class FightersBuild extends React.Component {
             setStyle: true,
             fightersList: fighters,
             showModal: false,
-            selectedFighter: "",
+            showFirstModal: true,
+            selectedFighter: [],
             isLoading: false,
             bestRecord: 0,
             currentRecord: 0,
             switchActive: false,
+            charIndex :"",
         }
     }
 
@@ -40,13 +45,15 @@ class FightersBuild extends React.Component {
     handleRandom = (fighters_list) => {
 
         this.handleClose();
-        let selectedFighter = "";
+        let selectedFighter = [];
         this.setState((state, props) => ({
             isLoading: true,
         }));
 
         if (fighters_list.length > 0) {
+            let charIndex = [];
             let randomChar = this.getRandomInt(fighters_list.length);
+
             let tempFightersList = fighters_list;
 
             do {
@@ -54,12 +61,23 @@ class FightersBuild extends React.Component {
             } while (tempFightersList[randomChar].disabled === true && fighters_list.length > 0);
 
             tempFightersList[randomChar].disabled = true;
-            selectedFighter = tempFightersList[randomChar].displayName.fr_FR;
+            selectedFighter.push (tempFightersList[randomChar].displayName.fr_FR);
+            charIndex.push(randomChar);
+
+            do {
+                randomChar = this.getRandomInt(fighters_list.length);
+            } while (tempFightersList[randomChar].disabled === true && fighters_list.length > 0);
+
+            tempFightersList[randomChar].disabled = true;
+            selectedFighter.push (tempFightersList[randomChar].displayName.fr_FR);
+            charIndex.push(randomChar);
+
             this.setState((state, props) => ({
                 fightersList: tempFightersList,
                 showModal: true,
                 selectedFighter: selectedFighter,
                 isLoading: true,
+                charIndex : charIndex,
             }));
         }
     };
@@ -74,6 +92,7 @@ class FightersBuild extends React.Component {
             fightersList: tempFightersList,
             selectedFighter: "",
             currentRecord: 0,
+            charIndex : "",
         }));
     };
 
@@ -118,8 +137,6 @@ class FightersBuild extends React.Component {
 
             this.setState((state, props) => ({
                 fightersList: tempFightersList,
-                showModal: true,
-                selectedFighter: selectedFighter,
             }));
         }
     };
@@ -131,6 +148,7 @@ class FightersBuild extends React.Component {
 
         this.setState((state, props) => ({
             showModal: false,
+            showFirstModal : false,
             isLoading: false,
         }));
     };
@@ -141,7 +159,8 @@ class FightersBuild extends React.Component {
         this.setState((state, props) => ({
             switchActive: !this.state.switchActive,
             bestRecord: 0,
-            selectedFighter: ""
+            selectedFighter: "",
+            charIndex : "",
         }));
 
 
@@ -149,6 +168,11 @@ class FightersBuild extends React.Component {
 
     render() {
 
+        function importAll(r) {
+            return r.keys().map(r);
+        }
+
+        const images_large = importAll(require.context('../img_larges', false, /\.(png|jpe?g|svg)$/));
 
         const PurpleSwitch = withStyles({
             switchBase: {
@@ -164,11 +188,8 @@ class FightersBuild extends React.Component {
             track: {},
         })(Switch);
 
-        let audio = new Audio("./audios/win.mp3");
 
-        const start = () => {
-            audio.play()
-        };
+
 
         let listAvailable = this.state.fightersList.filter(fighter => fighter.disabled === false);
 
@@ -177,8 +198,32 @@ class FightersBuild extends React.Component {
             <Grid container style={{flexGrow: "1", overflowX: "hidden"}} spacing={3}>
                 <Grid item xs={12}>
                     <Container xs={12} className={"topContainer"}>
+                        {this.state.switchActive &&
+                        <Button onClick={(e) => this.handleWin(this.state.fightersList)} variant="contained" size="large"
+                                color="secondary"
+                                disabled={!this.state.selectedFighter.length > 0 && !this.state.isLoading}
+                                className={"winBtn basicBtn"}
+                        >
+                            GAGNÉ
+                        </Button>
+                        }
 
+                        {this.state.switchActive &&
+                        <Button onClick={(e) => this.handleLose(this.state.fightersList)} variant="contained" size="large"
+                                color="secondary"
+                                className={"loseBtn basicBtn"}
+                                disabled={!this.state.selectedFighter.length > 0}
+                        >
+                            PERDU
+                        </Button>
+                        }
 
+                        <Button onClick={(e) => this.handleReset(this.state.fightersList)} variant="contained" size="large"
+                                color="secondary"
+                                className={"resetBtn basicBtn"}
+                        >
+                            RESET
+                        </Button>
                         <Button color="primary" variant="contained" target="_blank" className={"customTitle"}
                                 href="https://twitter.com/NightOfLunaTV">
                             Online Smash DOWN by <Avatar alt="Benchi CHEN" src={me} className={"iconsize"}/>@NightOfLunaTV
@@ -212,49 +257,60 @@ class FightersBuild extends React.Component {
                         ))}
                     </Grid>
                 </Grid>
+
+                <Container>
+                    <Grid container spacing={3} style={{textAlign: "center"}}
+                          direction="row"
+                          justify="space-between"
+                          alignItems="center">
+                        <Grid item xs={3} >
+                            <Card className={{maxWidth: 100}} style={{backgroundImage:`url(${bgimg})`,backgroundSize: 'cover',}}>
+                                <CardActionArea>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                             {this.state.selectedFighter.length > 1 ? this.state.selectedFighter[0].replace("<br>", "") : "PRESS RANDOM !"}
+                                        </Typography>
+                                    </CardContent>
+                                    <img  style={{height:250,backgroundSize: 'contains',backgroundRepeat:"no-repeat"}}
+                                          src={this.state.charIndex !== "" ? images_large[this.state.charIndex[0]] : random} alt={"CHARACTER"}/>
+
+                                </CardActionArea>
+
+                            </Card>
+                        </Grid>
+
+                        <Grid item xs={6}>
+                            <Button onClick={(e) => this.handleRandom(this.state.fightersList)} variant="contained" size="large"
+                                    color="primary"
+                                    disabled={listAvailable.length === 0 || (this.state.switchActive && this.state.selectedFighter.length > 0)}
+                                    >
+                                    {listAvailable.length === 0 ? <h2 className={"bigTitle"}>VIDE</h2> :
+                                    <h1 className={"bigTitle"}>RANDOM</h1>}
+                                    {this.BoopButton}
+                            </Button>
+
+                         </Grid>
+                        <Grid item xs={3} >
+                            <Card className={{maxWidth: 100}} style={{backgroundImage:`url(${bgimg})`,backgroundSize: 'cover',}}>
+                                <CardActionArea>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                            {this.state.selectedFighter.length > 1 ? this.state.selectedFighter[1].replace("<br>", "") : "PRESS RANDOM !"}
+                                        </Typography>
+                                    </CardContent>
+                                    <img  style={{height:250,backgroundSize: 'contains',backgroundRepeat:"no-repeat"}}
+                                          src={this.state.charIndex !== "" ? images_large[this.state.charIndex[1]] : random} alt={"CHARACTER"}/>
+
+                                </CardActionArea>
+
+                            </Card>
+                        </Grid>
+                    </Grid>
+                </Container>
                 <Container style={{textAlign: "center", padding: "10px"}}>
-                    {this.state.switchActive &&
-                    <Button onClick={(e) => this.handleWin(this.state.fightersList)} variant="contained" size="large"
-                            color="secondary"
-                            disabled={!this.state.selectedFighter.length > 0 && !this.state.isLoading}
-                            className={"winBtn basicBtn"}
-                    >
-                        GAGNÉ
-                    </Button>
-                    }
-
-                    {this.state.switchActive &&
-                    <Button onClick={(e) => this.handleLose(this.state.fightersList)} variant="contained" size="large"
-                            color="secondary"
-                            className={"loseBtn basicBtn"}
-                            disabled={!this.state.selectedFighter.length > 0}
-                    >
-                        PERDU
-                    </Button>
-                    }
-
-                    <Button onClick={(e) => this.handleReset(this.state.fightersList)} variant="contained" size="large"
-                            color="secondary"
-                            className={"resetBtn basicBtn"}
-                    >
-                        RESET
-                    </Button>
-                </Container>
-
-                <Container style={{textAlign: "center"}}>
-
-                    <Button onClick={(e) => this.handleRandom(this.state.fightersList)} variant="contained" size="large"
-                            color="primary"
-                            disabled={listAvailable.length === 0 || (this.state.switchActive && this.state.selectedFighter.length > 0)}
-                            style={{height: "120px", width: "350px"}}>
-                        {listAvailable.length === 0 ? <h2 className={"bigTitle"}>VIDE</h2> :
-                            <h1 className={"bigTitle"}>RANDOM</h1>}
-                            {this.BoopButton}
-                    </Button>
-
 
                 </Container>
-                <Container style={{textAlign: 'center'}}>
+                {false && <Container style={{textAlign: 'center'}}>
                     <FormControlLabel className={"toggleSolo"}
                                       control={
                                           <PurpleSwitch
@@ -266,12 +322,18 @@ class FightersBuild extends React.Component {
                                       }
                                       label="SOLO CHALLENGE"
                     />
-                </Container>
+                </Container>}
 
 
                 <Snackbar open={this.state.showModal} autoHideDuration={1500} onClose={this.handleClose}>
                     <Alert onClose={this.handleClose} severity="info">
-                        Ce combattant a été sélectionné : {this.state.selectedFighter.replace("<br>", "")}
+                        Le combat sera  : {this.state.selectedFighter.length > 1 ? this.state.selectedFighter[0].replace("<br>", "") : null} VS {this.state.selectedFighter.length >1 ? this.state.selectedFighter[1].replace("<br>", "") : null}
+                    </Alert>
+                </Snackbar>
+
+                <Snackbar open={this.state.showFirstModal} onClose={this.handleClose}>
+                    <Alert onClose={this.handleClose} severity="info">
+                        Le combat sera  : {this.state.selectedFighter.length > 1 ? this.state.selectedFighter[0].replace("<br>", "") : null} VS {this.state.selectedFighter.length >1 ? this.state.selectedFighter[1].replace("<br>", "") : null}
                     </Alert>
                 </Snackbar>
 

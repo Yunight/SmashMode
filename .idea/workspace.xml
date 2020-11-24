@@ -1,11 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="">
+    <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="steve added">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/01_Mario_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/02_Donkey_Kong_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/03_Link_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/04_Samus_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/04e_Dark_Samus_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/05_Yoshi_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/06_Kirby_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/07_Fox_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/08_Pikachu_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/09_Luigi_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/10_Ness_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/11_CaptainFalcon_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/12_Jigglypuff_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/13_Peach_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/13e_Daisy_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/14_Bowser_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/15_IceClimbers_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/16_Sheik_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/17_Zelda_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/18_DrMario_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/19_Pichu_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/20_Falco_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/21_Marth_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/21e_Lucina_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/22_YoungLink_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/23_Ganondorf_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/24_Mewtwo_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/25_Roy_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/25e_Chrom_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/26_GameAndWatch_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/27_Meta_Knight_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/28_Pit_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/28e_Pit_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/29_Zero_Suit_Samus_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/30_Wario_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/31_Snake_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/32_Ike_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/33_34_35_Pokémon_Trainer_(solo)_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/36_DiddyKong_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/37_Lucas_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/38_Sonic_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/39_King_Dedede_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/40_Olimar_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/41_Lucario_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/42_R.O.B._SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/43_ToonLink_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/44_Wolf_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/45_Villager_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/46_Mega_Man_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/47_Wii_Fit_Trainer_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/48_Rosalina_&amp;_Luma_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/49_Little_Mac_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/50_Greninja_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/51_Mii_Brawler_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/52_Mii_Swordfighter_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/53_Mii_Gunner_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/54_Palutena_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/55_Pac-Man_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/56_Robin_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/57_Shulk_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/58_Bowser_Jr._SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/59_Duck_Hunt_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/60_Ryu_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/60e_Ken_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/61_Cloud_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/62_Corrin_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/63_Bayonetta_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/64_Inkling_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/65_Ridley_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/66a_Simon_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/66b_Richter_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/67_King_K._Rool_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/68_Isabelle_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/69_Incineroar_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/70_Piranha_Plant_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/71_Joker_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/72_Hero_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/73_Banjo_&amp;_Kazooie_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/74_Terry_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/75_Byleth_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/76_Min_Min_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img_larges/77_Steve_SSBU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/otherPictures/character_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/otherPictures/random.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FightersBuild.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FightersBuild.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SingleFighter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SingleFighter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fighter_data/fighters.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/fighter_data/fighters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +151,15 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Twitch_NOL_plugin_dev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,20 +171,21 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\night\WebstormProjects\smashnol\src\audios" />
-      <recent name="C:\Users\night\WebstormProjects\smashnol\src\images" />
-      <recent name="C:\Users\night\WebstormProjects\smashnol\src\otherPictures" />
-      <recent name="C:\Users\night\WebstormProjects\smashnol\src\fonts" />
-      <recent name="C:\Users\night\WebstormProjects\smashnol\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\night\WebstormProjects\smashnol\src\otherPictures" />
       <recent name="C:\Users\night\WebstormProjects\smashnol\src" />
       <recent name="C:\Users\night\WebstormProjects\smashnol\src\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\Smash\SmashModeOnline\src\otherPictures" />
+      <recent name="C:\Users\Administrator\Desktop\Smash\SmashModeOnline\src\large_img" />
+      <recent name="C:\Users\night\WebstormProjects\smashnol\src\audios" />
+      <recent name="C:\Users\night\WebstormProjects\smashnol\src\images" />
+      <recent name="C:\Users\night\WebstormProjects\smashnol\src\otherPictures" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -94,6 +203,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -110,6 +220,9 @@
       <workItem from="1593073827128" duration="8023000" />
       <workItem from="1593086726518" duration="11109000" />
       <workItem from="1593433318881" duration="5833000" />
+      <workItem from="1604774134156" duration="4191000" />
+      <workItem from="1605096663182" duration="619000" />
+      <workItem from="1606231815102" duration="12886000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -237,13 +350,50 @@
       <option name="project" value="LOCAL" />
       <updated>1593458965129</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Minmin update">
+      <created>1604774789486</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1604774789486</updated>
+    </task>
+    <task id="LOCAL-00020" summary="steve added">
+      <created>1604778902342</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1604778902342</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial push 24/06/2020" />
     <MESSAGE value="characters pictures" />
     <MESSAGE value="making the button smaller" />
@@ -256,60 +406,60 @@
     <MESSAGE value="minmin enable !" />
     <MESSAGE value="Chrom img fixed" />
     <MESSAGE value="Minmin update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minmin update" />
+    <MESSAGE value="steve added" />
+    <option name="LAST_COMMIT_MESSAGE" value="steve added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="460" y="95" key="#ESLint" timestamp="1593090739113">
+    <state x="703" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606246324853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="460" y="95" key="#ESLint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593090739113" />
-    <state x="452" y="95" key="#Notifications" timestamp="1593003145775">
+    <state x="703" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606246324853" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1606252157466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="95" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593003145775" />
-    <state x="677" y="294" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593009822941">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606252157466" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605173541872">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="677" y="294" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593009822941" />
-    <state x="850" y="86" key="CommitChangelistDialog2" timestamp="1593458964252">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605173541872" />
+    <state width="1899" height="174" key="GridCell.Tab.0.bottom" timestamp="1606251974421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="850" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593458964252" />
-    <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1593442137549">
+    <state width="1899" height="174" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606251974421" />
+    <state width="1899" height="174" key="GridCell.Tab.0.center" timestamp="1606251974421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="218" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593442137549" />
-    <state x="805" y="390" key="Github.ShareDialog" timestamp="1593025671796">
+    <state width="1899" height="174" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606251974421" />
+    <state width="1899" height="174" key="GridCell.Tab.0.left" timestamp="1606251974421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="805" y="390" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593025671796" />
-    <state x="352" y="77" key="SettingsEditor" timestamp="1593015790530">
+    <state width="1899" height="174" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606251974421" />
+    <state width="1899" height="174" key="GridCell.Tab.0.right" timestamp="1606251974421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="352" y="77" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593015790530" />
-    <state x="452" y="183" key="Vcs.Push.Dialog.v2" timestamp="1593458967903">
+    <state width="1899" height="174" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606251974421" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604778907163">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593458967903" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593088725435">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604778907163" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606252157466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593088725435" />
-    <state x="739" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593025688986">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606252157466" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1606252301510">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593025688986" />
-    <state x="591" y="163" width="738" height="714" key="find.popup" timestamp="1593458937366">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="591" y="163" width="738" height="714" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593458937366" />
-    <state x="532" y="237" key="run.anything.popup" timestamp="1593078746879">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593078746879" />
-    <state x="540" y="2" width="838" height="1032" key="search.everywhere.popup" timestamp="1593002462575">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="540" y="2" width="838" height="1032" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593002462575" />
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606252301510" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node_modules/@material-ui/core/Grid/Grid.d.ts</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -3134,6 +3134,7 @@
       "colorType": "B",
       "colorOrder": "0",
       "type": "",
+      "disabled": false,
       "displayNameEnSecondary": "STEVE / ALEX",
       "fileSecondary": "steve",
       "slug": "cat02_fighter_77"
