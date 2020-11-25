@@ -3,10 +3,20 @@
     src: local('SuperSmash'), url('./fonts/super_smash.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Anton';
+    src: local('Anton'), url('./fonts/Anton-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SSFIV';
+    src: local('SSFIV'), url('./fonts/SSF4.ttf') format('truetype');
+}
+
 
 body {
     margin: 0;
-    font-family: 'Roboto', 'Oxygen',
+    font-family: 'Anton','Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -68,9 +78,9 @@ body {
 }
 
 .bigTitle {
-    font-size: 50px;
+    font-size: 60px;
     margin: auto;
-    font-family: 'Roboto', serif;
+    font-family: 'Segoe UI','Roboto', serif;
 }
 
 .customTitle {
