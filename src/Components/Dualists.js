@@ -37,7 +37,7 @@ class Dualists extends React.Component {
                                     </Typography>
                                 </CardContent>
                                 <img  style={{height:250,backgroundSize: 'contains',backgroundRepeat:"no-repeat"}}
-                                      src={this.props.charIndex !== "" ? images_large[this.props.charIndex[0]] : random} alt={"CHARACTER"}/>
+                                      src={this.props.charIndex !== "" ? images_large[this.props.charIndex[0]].default : random} alt={"CHARACTER"}/>
 
                             </CardActionArea>
                         </Card>
@@ -66,7 +66,7 @@ class Dualists extends React.Component {
                     {this.props.isFighting === true &&
                         <Grid item sm={4} xs={12} >
                             <Button className={"btnfullWidth p1bg" }
-                                    variant="outlined"
+
                                     onClick={(e) => this.props.handleRandom(this.props.fightersList)} variant="contained" size="large"
                                     color="primary"
                                     aria-readonly={this.props.isLoading}
@@ -75,7 +75,7 @@ class Dualists extends React.Component {
                             </Button>
 
                             <Button className={"btnfullWidth p2bg"}
-                                    variant="outlined"
+
                                     onClick={(e) => this.props.handleRandom(this.props.fightersList)} variant="contained" size="large"
                                     color="secondary"
                                     aria-readonly={this.props.isLoading}
@@ -101,7 +101,7 @@ class Dualists extends React.Component {
                                     </Typography>
                                 </CardContent>
                                 <img  style={{height:250,backgroundSize: 'contains',backgroundRepeat:"no-repeat"} }
-                                      src={this.props.charIndex !== "" ? images_large[this.props.charIndex[1]] : random} alt={"CHARACTER"}/>
+                                      src={this.props.charIndex !== "" ? images_large[this.props.charIndex[1]].default : random} alt={"CHARACTER"}/>
 
                             </CardActionArea>
 

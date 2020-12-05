@@ -28,7 +28,7 @@ class SingleFighter extends React.Component {
                 <Card style={{textAlign: "center", width: '96px', height: '96px'}}>
                     <CardActionArea>
                         <img className={"bobeffect"} onClick={(e) => this.props.handleStyle(value.id, index)} style={styleSwitch}
-                             src={images[this.props.index]}
+                             src={images[this.props.index].default}
                              alt={value.displayNameEn}/>
                     </CardActionArea>
                 </Card>

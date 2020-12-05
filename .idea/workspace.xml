@@ -20,23 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="steve added">
-      <change afterPath="$PROJECT_DIR$/src/Components/Audioeffect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/RandomEventModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/constants/dialogue.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/constants/medias.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/img/objection.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/img/ogey_objection.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/img/textbox.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/img/textbox2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/img/textbox3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Dualists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dualists.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/FightersBuild.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FightersBuild.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/LandingModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LandingModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/audioplayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SingleFighter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SingleFighter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,6 +144,7 @@
       <workItem from="1606464596811" duration="10146000" />
       <workItem from="1607171963819" duration="19000" />
       <workItem from="1607172006732" duration="59000" />
+      <workItem from="1607172096248" duration="1847000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -309,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606347225885</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Events boxes">
+      <created>1607172275218</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1607172275218</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,65 +352,8 @@
     <MESSAGE value="steve added" />
     <MESSAGE value="Changing the ui for double characters selection with bigger pics" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="828" y="412" key="#ESLint" timestamp="1606325924586">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="828" y="412" key="#ESLint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606325924586" />
-    <state x="703" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606246324853">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="703" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606246324853" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1606347416231">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606347416231" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605173541872">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605173541872" />
-    <state width="1899" height="122" key="GridCell.Tab.0.bottom" timestamp="1606493620470">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="122" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606493620470" />
-    <state width="1899" height="122" key="GridCell.Tab.0.center" timestamp="1606493620469">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="122" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606493620469" />
-    <state width="1899" height="122" key="GridCell.Tab.0.left" timestamp="1606493620469">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="122" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606493620469" />
-    <state width="1899" height="122" key="GridCell.Tab.0.right" timestamp="1606493620470">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="122" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606493620470" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606347231703">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606347231703" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606252157466">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606252157466" />
-    <state x="924" y="127" width="915" height="801" key="find.popup" timestamp="1606492996902">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="924" y="127" width="915" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606492996902" />
-    <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1606395052850">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606395052850" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1606401530241">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606401530241" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606394144397">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606394144397" />
+    <MESSAGE value="Events boxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Events boxes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

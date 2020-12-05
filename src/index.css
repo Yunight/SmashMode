@@ -21,7 +21,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
+    overflow: hidden;
     background-image: url('otherPictures/SmashUltimate.jpg');
     background-size: cover;
     padding-bottom: 30px;
