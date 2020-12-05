@@ -20,13 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="steve added">
-      <change afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/otherPictures/FR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/otherPictures/JP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/otherPictures/UK.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Dualists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dualists.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/FightersBuild.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FightersBuild.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SingleFighter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SingleFighter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,11 +96,11 @@
       <recent name="C:\Users\night\WebstormProjects\smashnol\src\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\Smash\SmashModeOnline\src\otherPictures" />
       <recent name="C:\Users\Administrator\Desktop\Smash\SmashModeOnline\src\event\img" />
       <recent name="C:\Users\Administrator\Desktop\Smash\SmashModeOnline\src\event" />
       <recent name="C:\Users\Administrator\Desktop\Smash\SmashModeOnline\src\constants" />
       <recent name="C:\Users\Administrator\Desktop\Smash\SmashModeOnline\src\fonts" />
-      <recent name="C:\Users\Administrator\Desktop\Smash\SmashModeOnline\src\otherPictures" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -144,7 +143,7 @@
       <workItem from="1606464596811" duration="10146000" />
       <workItem from="1607171963819" duration="19000" />
       <workItem from="1607172006732" duration="59000" />
-      <workItem from="1607172096248" duration="1847000" />
+      <workItem from="1607172096248" duration="8012000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -307,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607172275218</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="dependencies fix">
+      <created>1607174350817</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1607174350817</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +359,8 @@
     <MESSAGE value="Changing the ui for double characters selection with bigger pics" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="Events boxes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Events boxes" />
+    <MESSAGE value="dependencies fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="dependencies fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

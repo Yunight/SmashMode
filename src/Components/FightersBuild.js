@@ -18,12 +18,16 @@ import 'react-h5-audio-player/lib/styles.css';
 import Audioeffect from "./Audioeffect";
 import RandomEventModal from "./RandomEventModal";
 import TextField from "@material-ui/core/TextField";
+import FR from '../otherPictures/FR.png';
+import UK from '../otherPictures/UK.png';
+import JP from '../otherPictures/JP.png';
 
 class FightersBuild extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
+            selectedLanguage:"fr_FR",
             setStyle: true,
             fightersList: fighters,
             showModal: false,
@@ -110,7 +114,21 @@ class FightersBuild extends React.Component {
             } while (tempFightersList[randomChar].disabled === true && fighters_list.length > 0);
 
             tempFightersList[randomChar].disabled = true;
-            selectedFighter.push (tempFightersList[randomChar].displayName.fr_FR);
+            switch (this.state.selectedLanguage) {
+                case "fr_FR":
+                    selectedFighter.push (tempFightersList[randomChar].displayName.fr_FR);
+                    break;
+                case "ja_JP":
+                    selectedFighter.push (tempFightersList[randomChar].displayName.ja_JP);
+                    break;
+                case "en_GB":
+                    selectedFighter.push (tempFightersList[randomChar].displayName.en_GB);
+                    break;
+                default :
+                    selectedFighter.push (tempFightersList[randomChar].displayName.fr_FR);
+                    break;
+            }
+
             charIndex.push(randomChar);
 
             do {
@@ -118,7 +136,20 @@ class FightersBuild extends React.Component {
             } while (tempFightersList[randomChar].disabled === true && fighters_list.length > 0);
 
             tempFightersList[randomChar].disabled = true;
-            selectedFighter.push (tempFightersList[randomChar].displayName.fr_FR);
+            switch (this.state.selectedLanguage) {
+                case "fr_FR":
+                    selectedFighter.push (tempFightersList[randomChar].displayName.fr_FR);
+                    break;
+                case "ja_JP":
+                    selectedFighter.push (tempFightersList[randomChar].displayName.ja_JP);
+                    break;
+                case "en_GB":
+                    selectedFighter.push (tempFightersList[randomChar].displayName.en_GB);
+                    break;
+                default :
+                    selectedFighter.push (tempFightersList[randomChar].displayName.fr_FR);
+                    break;
+            }
             charIndex.push(randomChar);
 
             this.setState((state, props) => ({
@@ -253,6 +284,37 @@ class FightersBuild extends React.Component {
 
     };
 
+    handleFlagChange =( flag) => {
+        switch (flag) {
+            case "ja_JP" :
+                document.getElementById("ja_JP").className = "activeFlag"
+
+                document.getElementById("fr_FR").className = "unactiveFlag"
+                document.getElementById("en_GB").className = "unactiveFlag"
+                break;
+            case "fr_FR":
+                document.getElementById("fr_FR").className = "activeFlag"
+
+                document.getElementById("ja_JP").className = "unactiveFlag"
+                document.getElementById("en_GB").className = "unactiveFlag"
+                break;
+            case "en_GB":
+                document.getElementById("en_GB").className = "activeFlag"
+
+                document.getElementById("fr_FR").className = "unactiveFlag"
+                document.getElementById("ja_JP").className = "unactiveFlag"
+                break;
+            default :
+                document.getElementById("fr_FR").className = "activeFlag"
+
+                document.getElementById("ja_JP").className = "unactiveFlag"
+                document.getElementById("en_GB").className = "unactiveFlag"
+        }
+        this.setState((state, props) => ({
+            selectedLanguage: flag,
+        }));
+    }
+
     render() {
         const PurpleSwitch = withStyles({
             switchBase: {
@@ -271,11 +333,43 @@ class FightersBuild extends React.Component {
         let listAvailable = this.state.fightersList.filter(fighter => fighter.disabled === false);
 
         this.player = createRef();
-        return (
 
-            <Grid container style={{flexGrow: "1", overflowX: "hidden"}} spacing={3}>
-                <Grid item xs={12}>
-                    <Container xs={12} className={"topContainer"}>
+        return (
+            <Grid  style={{flexGrow: "1", overflow: "hidden"}}  >
+                <Grid item xs={12} className={"topContainer"}>
+
+                    <div className={"flagPosition"}>
+                        <img
+                             onClick={(e) => this.handleFlagChange("fr_FR")}
+                             id={'fr_FR'}
+                             className={"activeFlag"}
+                             src={FR}
+                             alt={"France"}/>
+                        <img
+                             onClick={(e) => this.handleFlagChange("en_GB")}
+                             id={'en_GB'}
+                             className={"unactiveFlag"}
+                             src={UK}
+                             alt={"France"}/>
+                        <img
+                            onClick={(e) => this.handleFlagChange("ja_JP")}
+                            id={'ja_JP'}
+                            className={"unactiveFlag"}
+                            src={JP}
+                            alt={"Japan"}/>
+                    </div>
+
+                        <FormControlLabel className={"toggleSolo"}
+                                          control={
+                                              <PurpleSwitch
+                                                  checked={this.state.switchActive}
+                                                  onChange={(e) => this.handleChangeSwitch(this.state.fightersList)}
+                                                  name="checkedB"
+                                                  color="primary"
+                                              />
+                                          }
+
+                        />
                         {this.state.switchActive &&
 
                         <Button onClick={(e) => this.handleWin(this.state.fightersList)} variant="contained" size="large"
@@ -296,7 +390,7 @@ class FightersBuild extends React.Component {
                         }
 
                         <TextField
-                            style={{margin:2,backgroundColor: "rgba(63, 70, 191, .3)"}}
+                            style={{margin:2,backgroundColor: "rgba(63, 70, 191, .3)",width:150}}
                             id="p1name"
                             label="Player 1"
                             //defaultValue="Player 2 Name"
@@ -308,7 +402,7 @@ class FightersBuild extends React.Component {
                         />
 
                         <TextField
-                            style={{margin:2,backgroundColor: "rgba(240, 52, 52, .6)"}}
+                            style={{margin:2,backgroundColor: "rgba(240, 52, 52, .6)",width:150}}
                             id="p2name"
                             label="Player 2"
                             //defaultValue="Player 2 Name"
@@ -344,11 +438,14 @@ class FightersBuild extends React.Component {
                         <Button color="primary" variant="contained" className={"floatTitleRight"}>
                             Combattants Restants : {listAvailable.length}
                         </Button>
-                    </Container>
+
+
+
 
                     {this.state.autoPlay &&
                         <Audioeffect/>
                     }
+                </Grid>
                     <Grid container justify="center" spacing={1}>
                         {this.state.fightersList.map((value, index) => (
                             <SingleFighter
@@ -359,7 +456,7 @@ class FightersBuild extends React.Component {
                             />
                         ))}
                     </Grid>
-                </Grid>
+
 
                 <Dualists
                     listAvailable = {listAvailable}

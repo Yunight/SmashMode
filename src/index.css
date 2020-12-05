@@ -109,7 +109,7 @@ body {
 }
 
 .floatTitleRight {
-    float: right;
+
     background-color: darkcyan !important;
     margin-left: 50px;
     margin-bottom: 50px;
@@ -180,6 +180,22 @@ body {
     margin: 10px 0 !important;
 }
 
+.flagPosition{
+    float: left;
+}
+
+.activeFlag{
+    filter: grayscale(0);
+}
+
+.unactiveFlag{
+    filter: grayscale(1);
+}
+
+.flagPosition img{
+    margin: 0 10px;
+}
+
 @media (max-width: 1281px) {
 
 
@@ -209,6 +225,7 @@ body {
         margin-top: 10px !important;
         margin-bottom: 10px !important;
         width: 100%;
+        background-color: darkcyan !important;
 
     }
     .toggleSolo{
