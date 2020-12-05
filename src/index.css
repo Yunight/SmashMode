@@ -16,7 +16,7 @@
 
 body {
     margin: 0;
-    font-family: 'Anton','Roboto', 'Oxygen',
+    font-family: 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -60,6 +60,7 @@ body {
 
 .winBtn{
     background-color: mediumseagreen !important;
+    width: 100%;
 }
 
 .loseBtn{
@@ -81,6 +82,10 @@ body {
     font-size: 60px;
     margin: auto;
     font-family: 'Segoe UI','Roboto', serif;
+}
+
+.ssf4{
+    font-family:"SSFIV"
 }
 
 .customTitle {
@@ -122,6 +127,58 @@ body {
     color:mediumseagreen;
 }
 
+.smalldevice{
+    font-size:40px;
+    font-family:"SSFIV";
+}
+
+.fullwidthcontent{
+    width: 100%;
+}
+
+.MuiButton-textPrimary {
+    color: green;
+}
+
+.eventBonusMalus{
+
+    text-transform: uppercase;
+    margin:0
+}
+
+.eventGoal{
+    margin-bottom: 10px;
+}
+
+.bonusTxt{
+    color:darkgreen;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.malusTxt{
+    color:red;
+    text-align: left;
+    padding-left: 50px;
+}
+.EventPlayer{
+    color: mediumpurple;
+    text-transform: capitalize;
+}
+
+.btnfullWidth{
+    width: 100%;
+}
+
+.p1bg{
+    background-color: darkblue !important;
+    margin: 10px 0 !important;
+}
+
+.p2bg{
+    background-color: darkred !important;
+    margin: 10px 0 !important;
+}
 
 @media (max-width: 1281px) {
 
@@ -156,6 +213,10 @@ body {
     }
     .toggleSolo{
         color:black !important;
+    }
+
+    .smalldevice{
+        font-size: 20px;
     }
 
 }

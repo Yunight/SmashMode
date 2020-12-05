@@ -10,6 +10,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import random from "../otherPictures/random.png";
+import TextField from "@material-ui/core/TextField";
 
 class Dualists extends React.Component {
 
@@ -27,7 +28,7 @@ class Dualists extends React.Component {
                       direction="row"
                       justify="space-between"
                       alignItems="center">
-                    <Grid item xs={3} >
+                    <Grid item sm={3} xs={12} >
                         <Card  style={{backgroundImage:`url(${bgimg1})`,backgroundSize: 'cover',}}>
                             <CardActionArea>
                                 <CardContent>
@@ -39,29 +40,59 @@ class Dualists extends React.Component {
                                       src={this.props.charIndex !== "" ? images_large[this.props.charIndex[0]] : random} alt={"CHARACTER"}/>
 
                             </CardActionArea>
-
                         </Card>
                     </Grid>
-                    <Grid item xs={1} style={{backgroundColor:"red"}}>
-
-
+                    <Grid item sm={1} xs={12} style={{backgroundColor:"white",borderRadius:5,padding:10}}>
+                        <TextField style={{paddingBottom:10}} id="p1wins" label="Wins" variant="outlined"
+                                   value={this.props.players[0].wins ? this.props.players[0].wins : ""} disabled={true} />
+                        <TextField id="p1score" label="Score" variant="outlined"
+                                   value={this.props.players[0].score ? this.props.players[0].score : ""} disabled={true}/>
                     </Grid>
-                    <Grid item xs={4}>
-                        <Button onClick={(e) => this.props.handleRandom(this.props.fightersList)} variant="contained" size="large"
-                                color="primary"
-                                style={{backgroundImage:`url(${btnbg})`,backgroundSize: 'cover'}}
-                                disabled={this.props.listAvailable.length === 0 || (this.props.switchActive && this.props.selectedFighter.length > 0)}>
-                            {this.props.listAvailable.length === 0 ? <h2 className={"bigTitle"}>VIDE</h2> :
-                                <h1 className={"bigTitle"}>RANDOM</h1>}
-                            {this.BoopButton}
-                        </Button>
 
+                    {this.props.isFighting === false &&
+                        <Grid item sm={4} xs={12}>
+                            <Button onClick={(e) => this.props.handleRandom(this.props.fightersList)} variant="contained" size="large"
+                                    color="primary"
+                                    aria-readonly={this.props.isLoading}
+                                    style={{backgroundImage:`url(${btnbg})`,backgroundSize: 'cover'}}
+                                    disabled={this.props.listAvailable.length === 0 || (this.props.switchActive && this.props.selectedFighter.length > 0) || this.props.isLoading}>
+                                        {this.props.listAvailable.length === 0 ? <h2 className={"bigTitle"}>VIDE</h2> :
+                                            <h1 className={"bigTitle"}>RANDOM</h1>}
+                                        {this.BoopButton}
+                            </Button>
+                        </Grid>
+                    }
+
+                    {this.props.isFighting === true &&
+                        <Grid item sm={4} xs={12} >
+                            <Button className={"btnfullWidth p1bg" }
+                                    variant="outlined"
+                                    onClick={(e) => this.props.handleRandom(this.props.fightersList)} variant="contained" size="large"
+                                    color="primary"
+                                    aria-readonly={this.props.isLoading}
+                                    disabled={this.props.listAvailable.length === 0 || (this.props.switchActive && this.props.selectedFighter.length > 0) || this.props.isLoading}>
+                                    <h2>P1 WIN</h2>
+                            </Button>
+
+                            <Button className={"btnfullWidth p2bg"}
+                                    variant="outlined"
+                                    onClick={(e) => this.props.handleRandom(this.props.fightersList)} variant="contained" size="large"
+                                    color="secondary"
+                                    aria-readonly={this.props.isLoading}
+                                    disabled={this.props.listAvailable.length === 0 || (this.props.switchActive && this.props.selectedFighter.length > 0) || this.props.isLoading}>
+                                    <h2 >P2 WIN</h2>
+                            </Button>
+                        </Grid>
+                    }
+
+
+                    <Grid item sm={1} xs={12} style={{backgroundColor:"white",borderRadius:5,padding:10}}>
+                        <TextField style={{paddingBottom:10}} id="p2wins" label="Wins" variant="outlined"
+                                   value={this.props.players[1].p2_wins ? this.props.players[1].p2_wins : ""} disabled={true} />
+                        <TextField id="p2score" label="Score" variant="outlined"
+                                   value={this.props.players[1].p2_score ? this.props.players[1].p2_score : ""} disabled={true}/>
                     </Grid>
-                    <Grid item xs={1} style={{backgroundColor:"yellow"}}>
-
-
-                    </Grid>
-                    <Grid item xs={3} >
+                    <Grid item sm={3} xs={12} >
                         <Card style={{backgroundImage:`url(${bgimg2})`,backgroundSize: 'cover',}}>
                             <CardActionArea>
                                 <CardContent>

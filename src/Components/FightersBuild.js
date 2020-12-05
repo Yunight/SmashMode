@@ -14,9 +14,10 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import green from "@material-ui/core/colors/green";
 import LandingModal from "./LandingModal";
 import Dualists from "./Dualists";
-import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
-import Audioplayer from "./audioplayer";
+import Audioeffect from "./Audioeffect";
+import RandomEventModal from "./RandomEventModal";
+import TextField from "@material-ui/core/TextField";
 
 class FightersBuild extends React.Component {
 
@@ -26,7 +27,8 @@ class FightersBuild extends React.Component {
             setStyle: true,
             fightersList: fighters,
             showModal: false,
-            showFirstModal: true,
+            showFirstModal: false,
+            showEventModal:false,
             selectedFighter: [],
             isLoading: false,
             bestRecord: 0,
@@ -34,6 +36,22 @@ class FightersBuild extends React.Component {
             switchActive: false,
             charIndex :"",
             autoplay:false,
+            eventPlayer : null,
+            isFighting : false,
+            players:[{
+                        id:"p1",
+                        name:"",
+                        wins:null,
+                        score:null
+                     },
+                    {
+                        id:"p2",
+                        name:"",
+                        wins:null,
+                        score:null,
+                    }],
+
+
         }
     }
 
@@ -41,13 +59,45 @@ class FightersBuild extends React.Component {
         return Math.floor(Math.random() * Math.floor(max));
     };
 
+    stopPlay = () => {
+        this.setState((state, props) => ({
+            autoPlay: false,
+        }));
+    }
+
+    randomEvent = () => {
+
+       // if(Math.floor(Math.random() * Math.floor(2)) == 1){
+            this.setState((state, props) => ({
+                showEventModal: true,
+                isLoading: true,
+            }));
+        //}
+
+    }
+
+    playersToUpdate = (player1, player2) => {
+
+        this.setState((state, props) => ({
+            players: [{
+                name:player1,
+            },
+            {name:player2},
+            ]
+        }));
+
+        this.handleClose();
+
+    }
 
     handleRandom = (fighters_list) => {
-        this.handleClose();
         let selectedFighter = [];
         this.setState((state, props) => ({
             isLoading: true,
         }));
+        
+        let eventPlayer = Math.floor(Math.random() * Math.floor(2));
+
 
         if (fighters_list.length > 0) {
             let charIndex = [];
@@ -78,8 +128,14 @@ class FightersBuild extends React.Component {
                 isLoading: true,
                 charIndex : charIndex,
                 autoPlay: true,
+                eventPlayer : eventPlayer,
+                isFighting : true,
             }));
+
         }
+
+        this.randomEvent();
+        setTimeout(this.stopPlay,2000)
     };
 
     handleReset = (fighters_list) => {
@@ -102,6 +158,8 @@ class FightersBuild extends React.Component {
         this.setState((state, props) => ({
             currentRecord: this.state.currentRecord + 1,
             selectedFighter: "",
+            showEventModal:false
+
         }));
 
 
@@ -155,6 +213,34 @@ class FightersBuild extends React.Component {
     };
 
 
+    handleEventLose = () => {
+        this.setState((state, props) => ({
+            showEventModal:false
+        }));
+    };
+
+    handleEventWin = () => {
+
+        this.setState((state, props) => ({
+            showEventModal:false
+        }));
+
+    };
+
+    handleEventClose = (event, reason) => {
+
+        if (reason === 'clickaway') {
+            return;
+        }
+
+        this.setState((state, props) => ({
+            showEventModal:false,
+            showFirstModal:false,
+        }));
+    };
+
+
+
     handleChangeSwitch = (fightersList) => {
         this.handleReset(fightersList);
         this.setState((state, props) => ({
@@ -168,7 +254,6 @@ class FightersBuild extends React.Component {
     };
 
     render() {
-
         const PurpleSwitch = withStyles({
             switchBase: {
                 color: green[300],
@@ -192,11 +277,11 @@ class FightersBuild extends React.Component {
                 <Grid item xs={12}>
                     <Container xs={12} className={"topContainer"}>
                         {this.state.switchActive &&
+
                         <Button onClick={(e) => this.handleWin(this.state.fightersList)} variant="contained" size="large"
                                 color="secondary"
                                 disabled={!this.state.selectedFighter.length > 0 && !this.state.isLoading}
-                                className={"winBtn basicBtn"}
-                        >
+                                className={"winBtn basicBtn"}>
                             GAGNÉ
                         </Button>
                         }
@@ -205,18 +290,41 @@ class FightersBuild extends React.Component {
                         <Button onClick={(e) => this.handleLose(this.state.fightersList)} variant="contained" size="large"
                                 color="secondary"
                                 className={"loseBtn basicBtn"}
-                                disabled={!this.state.selectedFighter.length > 0}
-                        >
+                                disabled={!this.state.selectedFighter.length > 0}>
                             PERDU
                         </Button>
                         }
 
+                        <TextField
+                            style={{margin:2,backgroundColor: "rgba(63, 70, 191, .3)"}}
+                            id="p1name"
+                            label="Player 1"
+                            //defaultValue="Player 2 Name"
+                            value={this.state.players[0].name ? this.state.players[0].name : "Player 1 Name"}
+                            InputProps={{
+                                readOnly: true,
+                            }}
+                            variant="filled"
+                        />
+
+                        <TextField
+                            style={{margin:2,backgroundColor: "rgba(240, 52, 52, .6)"}}
+                            id="p2name"
+                            label="Player 2"
+                            //defaultValue="Player 2 Name"
+                            value={this.state.players[1].name ? this.state.players[1].name : "Player 2 Name"}
+                            InputProps={{
+                                readOnly: true,
+                            }}
+                            variant="filled"
+                        />
+
                         <Button onClick={(e) => this.handleReset(this.state.fightersList)} variant="contained" size="large"
                                 color="secondary"
-                                className={"resetBtn basicBtn"}
-                        >
+                                className={"resetBtn basicBtn"}>
                             RESET
                         </Button>
+
                         <Button color="primary" variant="contained" target="_blank" className={"customTitle"}
                                 href="https://twitter.com/NightOfLunaTV">
                             Online Smash DOWN by <Avatar alt="Benchi CHEN" src={me} className={"iconsize"}/>@NightOfLunaTV
@@ -238,6 +346,9 @@ class FightersBuild extends React.Component {
                         </Button>
                     </Container>
 
+                    {this.state.autoPlay &&
+                        <Audioeffect/>
+                    }
                     <Grid container justify="center" spacing={1}>
                         {this.state.fightersList.map((value, index) => (
                             <SingleFighter
@@ -253,15 +364,30 @@ class FightersBuild extends React.Component {
                 <Dualists
                     listAvailable = {listAvailable}
                     selectedFighter={ this.state.selectedFighter}
+                    players={this.state.players}
                     charIndex={this.state.charIndex}
                     switchActive={this.state.switchActive}
                     handleRandom={this.handleRandom}
                     fightersList={this.state.fightersList}
+                    isLoading={this.state.isLoading}
+                    isFighting={this.state.isFighting}
                 />
 
                 <LandingModal
                     showFirstModal={this.state.showFirstModal}
-                    handleClose={this.handleClose}
+                    handleEventClose={this.handleEventClose}
+                    playersToUpdate={this.playersToUpdate}
+                    players={this.state.players}
+                />
+
+                <RandomEventModal
+                    eventPlayer={this.state.eventPlayer}
+                    showEventModal={this.state.showEventModal}
+                    handleEventClose={this.handleEventClose}
+                    players={this.state.players}
+                    fightersList={this.state.fightersList}
+                    handleEventWin={this.handleEventWin}
+                    handleEventLose={this.handleEventLose}
                 />
 
 
@@ -280,9 +406,7 @@ class FightersBuild extends React.Component {
                     />
                 </Container>}
 
-                <Audioplayer
-                    auto={this.state.autoPlay}
-                />
+
 
                 <Snackbar open={this.state.showModal} autoHideDuration={1500} onClose={this.handleClose}>
                     <Alert onClose={this.handleClose} severity="info">
@@ -290,11 +414,6 @@ class FightersBuild extends React.Component {
                     </Alert>
                 </Snackbar>
 
-                <Snackbar open={this.state.showModal} onClose={this.handleClose}>
-                    <Alert onClose={this.handleClose} severity="info">
-                        Le combat sera  : {this.state.selectedFighter.length > 1 ? this.state.selectedFighter[0].replace("<br>", "") : null} VS {this.state.selectedFighter.length >1 ? this.state.selectedFighter[1].replace("<br>", "") : null}
-                    </Alert>
-                </Snackbar>
 
 
             </Grid>

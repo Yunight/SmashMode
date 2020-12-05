@@ -1,0 +1,20 @@
+[
+  {
+    "id": "01",
+    "h1": "Le snake doit perdre !",
+    "h2": "Une victoire sur snake ",
+    "bonus": "Victoire => Double les points actuel!",
+    "malus": "Défaite => Divise les points par deux!",
+    "from": "Ogey sûrement",
+    "img" : "https://static.wikia.nocookie.net/ssb/images/8/8a/Character_select_screen.png/revision/latest/scale-to-width-down/1000?cb=20181102010549"
+  },
+  {
+    "id": "01",
+    "h1": "Lucina est top 5 !",
+    "h2": "Gagner sans perdre de stock",
+    "bonus": "Gagne 3 points",
+    "malus": "l'opposant gagne 2 points",
+    "from": "Tonton anonyme",
+    "img" : "../img/ogey_objection.png"
+  }
+]
