@@ -83,20 +83,4 @@
     "disabled" : false,
     "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/freezer.mp3"
   }
-
-,
-  {
-    "id": "999",
-    "tier": 2,
-    "h1": "Je suis le plus puissant !",
-    "h2": "Doit taunt 10 fois et gagner",
-    "affecting": "winner",
-    "bonus": "Gagne 3 points",
-    "bonus_effect": "+3",
-    "malus": "l'opposant gagne 2 points",
-    "malus_effect": "+2",
-    "from": "Frigo ",
-    "disabled" : false,
-    "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/freezer.mp3"
-  }
 ]

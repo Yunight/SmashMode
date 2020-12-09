@@ -20,25 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="steve added">
-      <change afterPath="$PROJECT_DIR$/src/event/event_pics/00_gon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/event_pics/01_mayuri.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/event_pics/02_cpt_falcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/event_pics/03_luffy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/event_pics/04_kirua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/event_pics/05_freezer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/event_pics/06_ogey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/event_sounds/luffy-smile.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/event/event_sounds/Random_Selection.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Audioeffect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Audioeffect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Dualists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dualists.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/FightersBuild.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FightersBuild.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/RandomEventModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RandomEventModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/event/constants/dialogue.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/event/constants/dialogue.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/event/constants/medias.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/event/constants/medias.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/event/event_sounds/luffy-smile.mp3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +144,7 @@
       <workItem from="1607171963819" duration="19000" />
       <workItem from="1607172006732" duration="59000" />
       <workItem from="1607172096248" duration="8139000" />
-      <workItem from="1607506859711" duration="22930000" />
+      <workItem from="1607506859711" duration="24443000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -340,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607510774024</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Events modals with pictures &amp; sounds">
+      <created>1607535398735</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1607535398735</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +384,8 @@
     <MESSAGE value="dependencies fix" />
     <MESSAGE value="languages choices for fighters's name&#10;FR : French&#10;EN : English&#10;JP : Japanese" />
     <MESSAGE value="Win &amp; lose + score for each players, done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Win &amp; lose + score for each players, done" />
+    <MESSAGE value="Events modals with pictures &amp; sounds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Events modals with pictures &amp; sounds" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

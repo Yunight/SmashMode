@@ -202,6 +202,7 @@ class FightersBuild extends React.Component {
                 isLoading: true,
                 charIndex : charIndex,
                 eventPlayer : eventPlayer,
+                autoPlay: true,
                 isFighting : true,
             }));
 
@@ -526,6 +527,7 @@ class FightersBuild extends React.Component {
                 {this.state.autoPlay &&
                     <Audioeffect
                         selectedDialogue={this.state.selectedDialogue}
+                        eventCounter={this.state.eventCounter}
                     />
                 }
 
