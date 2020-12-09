@@ -49,7 +49,7 @@ class Dualists extends React.Component {
                                    value={this.props.players[0].score ? this.props.players[0].score : ""} disabled={true}/>
                     </Grid>
 
-                    {this.props.isFighting === false &&
+                    {(this.props.isFighting === false || this.props.showEventModal == true) &&
                         <Grid item sm={4} xs={12}>
                             <Button onClick={(e) => this.props.handleRandom(this.props.fightersList)} variant="contained" size="large"
                                     color="primary"
@@ -63,7 +63,7 @@ class Dualists extends React.Component {
                         </Grid>
                     }
 
-                    {this.props.isFighting === true &&
+                    {(this.props.isFighting === true && this.props.showEventModal == false)  &&
                         <Grid item sm={4} xs={12} >
                             <Button className={"btnfullWidth p1bg" }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
-import voices from "../event/constants/medias.json";
+import voices from "../event/constants/dialogue.json";
 
 class Audioeffect extends React.Component {
 
@@ -17,7 +17,7 @@ class Audioeffect extends React.Component {
             <div style={{display:"none"}}>
                 <AudioPlayer
                     autoPlay={true}
-                    src={this.state.voices[0].url}
+                    src={this.state.voices[this.props.selectedDialogue].sound}
                     onPlay={e => console.log("onPlay")}
                     // other props here
                 />

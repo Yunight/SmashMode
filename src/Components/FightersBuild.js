@@ -21,6 +21,7 @@ import TextField from "@material-ui/core/TextField";
 import FR from '../otherPictures/FR.png';
 import UK from '../otherPictures/UK.png';
 import JP from '../otherPictures/JP.png';
+import eventDialogues from "../event/constants/dialogue.json";
 
 class FightersBuild extends React.Component {
 
@@ -28,6 +29,9 @@ class FightersBuild extends React.Component {
         super(props);
         this.state = {
             selectedLanguage:"fr_FR",
+            eventDialogues : eventDialogues,
+            selectedDialogue : 0,
+            eventCounter : 0,
             setStyle: true,
             fightersList: fighters,
             showModal: false,
@@ -102,9 +106,44 @@ class FightersBuild extends React.Component {
         this.setState((state, props) => ({
             isLoading: true,
         }));
-        
+
         let eventPlayer = Math.floor(Math.random() * Math.floor(2));
 
+        let listAvailableEvent = this.state.eventDialogues;
+        let anyDialogAvailable = false;
+
+        listAvailableEvent.map(event => {
+            if(event.disabled === false){
+                anyDialogAvailable = true;
+            }else{
+                this.setState((state, props) => ({
+                    selectedDialogue : 0,
+
+                }));
+            }
+        })
+
+        if(listAvailableEvent.length > 0 && anyDialogAvailable && this.state.eventCounter === 3){
+
+            let randomEvent = this.getRandomInt(listAvailableEvent.length);
+
+            do {
+                randomEvent = this.getRandomInt(listAvailableEvent.length);
+            } while (listAvailableEvent[randomEvent].disabled === true && listAvailableEvent.length > 0);
+            listAvailableEvent[randomEvent].disabled = true;
+
+            this.setState((state, props) => ({
+                eventDialogues :listAvailableEvent,
+                selectedDialogue : randomEvent,
+                autoPlay: true,
+                eventCounter:0,
+            }));
+        }else{
+            let eventCounterNb = this.state.eventCounter;
+            this.setState((state, props) => ({
+                eventCounter : eventCounterNb+1
+            }));
+        }
 
         if (fighters_list.length > 0) {
             let charIndex = [];
@@ -156,20 +195,24 @@ class FightersBuild extends React.Component {
             charIndex.push(randomChar);
 
             this.setState((state, props) => ({
+
                 fightersList: tempFightersList,
                 showModal: true,
                 selectedFighter: selectedFighter,
                 isLoading: true,
                 charIndex : charIndex,
-                autoPlay: true,
                 eventPlayer : eventPlayer,
                 isFighting : true,
             }));
 
         }
+        if(anyDialogAvailable && this.state.eventCounter === 3){
+            this.randomEvent();
+        }
 
-        this.randomEvent();
-        setTimeout(this.stopPlay,2000)
+        setTimeout(this.stopPlay,3000)
+
+
     };
 
     handleReset = (fighters_list) => {
@@ -273,13 +316,33 @@ class FightersBuild extends React.Component {
     };
 
 
-    handleEventLose = () => {
-        this.setState((state, props) => ({
-            showEventModal:false
-        }));
-    };
+    handleEventWin = (eventPlayer,winner) => {
 
-    handleEventWin = () => {
+        let p1 = this.state.players[0];
+        let p2 = this.state.players[1];
+
+        //this.handleClose();
+        if(winner === "p1"){
+            p1.wins = p1.wins+1;
+            p1.score = p1.score+1;
+            this.setState((state, props) => ({
+                isFighting:false,
+                players:[
+                    p1,
+                    p2
+                ]
+            }));
+        }else if(winner === "p2"){
+            p2.wins = p2.wins+1;
+            p2.score = p2.score+1;
+            this.setState((state, props) => ({
+                isFighting:false,
+                players:[
+                    p1,
+                    p2
+                ]
+            }));
+        }
 
         this.setState((state, props) => ({
             showEventModal:false
@@ -460,9 +523,12 @@ class FightersBuild extends React.Component {
 
 
 
-                    {this.state.autoPlay &&
-                        <Audioeffect/>
-                    }
+                {this.state.autoPlay &&
+                    <Audioeffect
+                        selectedDialogue={this.state.selectedDialogue}
+                    />
+                }
+
                 </Grid>
                     <Grid container justify="center" spacing={1}>
                         {this.state.fightersList.map((value, index) => (
@@ -484,6 +550,7 @@ class FightersBuild extends React.Component {
                     switchActive={this.state.switchActive}
                     handleRandom={this.handleRandom}
                     handleWin={this.handleWin}
+                    showEventModal={this.state.showEventModal}
                     fightersList={this.state.fightersList}
                     isLoading={this.state.isLoading}
                     isFighting={this.state.isFighting}
@@ -497,6 +564,7 @@ class FightersBuild extends React.Component {
                 />
 
                 <RandomEventModal
+                    selectedDialogue={this.state.selectedDialogue}
                     eventPlayer={this.state.eventPlayer}
                     showEventModal={this.state.showEventModal}
                     handleEventClose={this.handleEventClose}
@@ -504,6 +572,7 @@ class FightersBuild extends React.Component {
                     fightersList={this.state.fightersList}
                     handleEventWin={this.handleEventWin}
                     handleEventLose={this.handleEventLose}
+                    isloading={this.state.isLoading}
                 />
 
 

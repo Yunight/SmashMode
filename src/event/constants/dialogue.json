@@ -1,20 +1,102 @@
 [
   {
-    "id": "01",
-    "h1": "Le snake doit perdre !",
-    "h2": "Une victoire sur snake ",
-    "bonus": "Victoire => Double les points actuel!",
-    "malus": "Défaite => Divise les points par deux!",
-    "from": "Ogey sûrement",
-    "img" : "https://static.wikia.nocookie.net/ssb/images/8/8a/Character_select_screen.png/revision/latest/scale-to-width-down/1000?cb=20181102010549"
+    "id": "00",
+    "tier": 1,
+    "h1": "Echangez vos persos",
+    "h2": "Gagner avec le perso adverse",
+    "affecting": "both",
+    "bonus": "Gagne 3 points",
+    "winning_effect" :"+3",
+    "malus": "Divise les points par deux!",
+    "losing_effect": "/2",
+    "from": "Gon Freecss ",
+    "disabled" : false,
+    "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/gon.mp3"
   },
   {
     "id": "01",
-    "h1": "Lucina est top 5 !",
-    "h2": "Gagner sans perdre de stock",
+    "tier": 1,
+    "h1": "Tuturuuu",
+    "h2": "1 stock chacun",
+    "affecting": "both",
     "bonus": "Gagne 3 points",
+    "bonus_effect": "+3",
     "malus": "l'opposant gagne 2 points",
-    "from": "Tonton anonyme",
-    "img" : "../img/ogey_objection.png"
+    "malus_effect": "+2",
+    "from": "Mayuri Shiina",
+    "disabled" : false,
+    "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/mayuri.mp3"
+  },
+  {
+    "id": "02",
+    "tier": 1,
+    "h1": "My time has not passed yet",
+    "h2": "Tuer à moins de 100%",
+    "affecting": "winner",
+    "bonus": "Gagne 3 points",
+    "bonus_effect": "+3",
+    "malus": "l'opposant gagne 2 points",
+    "malus_effect": "+2",
+    "from": "Mayuri Shiina",
+    "disabled" : false,
+    "sound": "https://www.myinstants.com/media/sounds/falconpunch.mp3"
+  },
+  {
+    "id": "03",
+    "tier": 2,
+    "h1": "Plus il y a de fous, moins il y a de riz",
+    "h2": "Gagner sans perdre de stock",
+    "affecting": "winner",
+    "bonus": "Gagne 5 points",
+    "bonus_effect": "+5",
+    "malus": "l'opposant gagne 2 points",
+    "malus_effect": "+2",
+    "from": "Monkey D. Luffy",
+    "disabled" : false,
+    "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/luffy-smile.mp3"
+  },
+  {
+    "id": "04",
+    "tier": 2,
+    "h1": "Assassin Zoldik",
+    "h2": "Footstool une fois l'adversaire",
+    "affecting": "winner",
+    "bonus": "Gagne 3 points",
+    "bonus_effect": "+3",
+    "malus": "l'opposant gagne 2 points",
+    "malus_effect": "+2",
+    "from": "Kirua Zoldik",
+    "disabled" : false,
+    "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/kirua.mp3"
+  },
+  {
+    "id": "05",
+    "tier": 2,
+    "h1": "Je suis le plus puissant !",
+    "h2": "Doit taunt 10 fois et gagner",
+    "affecting": "winner",
+    "bonus": "Gagne 3 points",
+    "bonus_effect": "+3",
+    "malus": "l'opposant gagne 2 points",
+    "malus_effect": "+2",
+    "from": "Frigo ",
+    "disabled" : false,
+    "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/freezer.mp3"
+  }
+
+,
+  {
+    "id": "999",
+    "tier": 2,
+    "h1": "Je suis le plus puissant !",
+    "h2": "Doit taunt 10 fois et gagner",
+    "affecting": "winner",
+    "bonus": "Gagne 3 points",
+    "bonus_effect": "+3",
+    "malus": "l'opposant gagne 2 points",
+    "malus_effect": "+2",
+    "from": "Frigo ",
+    "disabled" : false,
+    "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/freezer.mp3"
   }
 ]
