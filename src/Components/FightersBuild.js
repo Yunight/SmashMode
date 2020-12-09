@@ -44,13 +44,13 @@ class FightersBuild extends React.Component {
             isFighting : false,
             players:[{
                         id:"p1",
-                        name:"",
+                        name:"Joueur 1",
                         wins:null,
                         score:null
                      },
                     {
                         id:"p2",
-                        name:"",
+                        name:"Joueur 2",
                         wins:null,
                         score:null,
                     }],
@@ -81,12 +81,15 @@ class FightersBuild extends React.Component {
     }
 
     playersToUpdate = (player1, player2) => {
+        let p1 = this.state.players[0];
+        let p2 = this.state.players[1];
 
+        p1.name = player1;
+        p2.name = player2;
         this.setState((state, props) => ({
-            players: [{
-                name:player1,
-            },
-            {name:player2},
+            players: [
+                p1,
+            p2
             ]
         }));
 
@@ -175,32 +178,58 @@ class FightersBuild extends React.Component {
         tempFightersList.map(fighter => {
                 return fighter.disabled = false;
         });
+
         this.setState((state, props) => ({
             fightersList: tempFightersList,
             selectedFighter: "",
             currentRecord: 0,
+            showFirstModal:true,
             charIndex : "",
+            autoplay: false,
+            eventPlayer : null,
+            isFighting : false,
+            players:[{
+                id:"p1",
+                name:"Joueur 1",
+                wins:null,
+                score:null
+            },
+                {
+                    id:"p2",
+                    name:"Joueur 2",
+                    wins:null,
+                    score:null,
+                }]
         }));
     };
 
-    handleWin = () => {
+    handleWin = (winner) => {
 
-        this.handleClose();
-        this.setState((state, props) => ({
-            currentRecord: this.state.currentRecord + 1,
-            selectedFighter: "",
-            showEventModal:false
+        let p1 = this.state.players[0];
+        let p2 = this.state.players[1];
 
-        }));
-
-
-        if (this.state.currentRecord >= this.state.bestRecord) {
+        //this.handleClose();
+        if(winner === "p1"){
+            p1.wins = p1.wins+1;
+            p1.score = p1.score+1;
             this.setState((state, props) => ({
-                bestRecord: this.state.currentRecord + 1,
+                isFighting:false,
+                players:[
+                    p1,
+                    p2
+                ]
+            }));
+        }else if(winner === "p2"){
+            p2.wins = p2.wins+1;
+            p2.score = p2.score+1;
+            this.setState((state, props) => ({
+                isFighting:false,
+                players:[
+                    p1,
+                    p2
+                ]
             }));
         }
-
-
     };
 
     handleLose = () => {
@@ -359,17 +388,6 @@ class FightersBuild extends React.Component {
                             alt={"Japan"}/>
                     </div>
 
-                        <FormControlLabel className={"toggleSolo"}
-                                          control={
-                                              <PurpleSwitch
-                                                  checked={this.state.switchActive}
-                                                  onChange={(e) => this.handleChangeSwitch(this.state.fightersList)}
-                                                  name="checkedB"
-                                                  color="primary"
-                                              />
-                                          }
-
-                        />
                         {this.state.switchActive &&
 
                         <Button onClick={(e) => this.handleWin(this.state.fightersList)} variant="contained" size="large"
@@ -465,6 +483,7 @@ class FightersBuild extends React.Component {
                     charIndex={this.state.charIndex}
                     switchActive={this.state.switchActive}
                     handleRandom={this.handleRandom}
+                    handleWin={this.handleWin}
                     fightersList={this.state.fightersList}
                     isLoading={this.state.isLoading}
                     isFighting={this.state.isFighting}

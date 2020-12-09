@@ -67,7 +67,7 @@ class Dualists extends React.Component {
                         <Grid item sm={4} xs={12} >
                             <Button className={"btnfullWidth p1bg" }
 
-                                    onClick={(e) => this.props.handleRandom(this.props.fightersList)} variant="contained" size="large"
+                                    onClick={(e) => this.props.handleWin(this.props.players[0].id)} variant="contained" size="large"
                                     color="primary"
                                     aria-readonly={this.props.isLoading}
                                     disabled={this.props.listAvailable.length === 0 || (this.props.switchActive && this.props.selectedFighter.length > 0) || this.props.isLoading}>
@@ -76,7 +76,7 @@ class Dualists extends React.Component {
 
                             <Button className={"btnfullWidth p2bg"}
 
-                                    onClick={(e) => this.props.handleRandom(this.props.fightersList)} variant="contained" size="large"
+                                    onClick={(e) => this.props.handleWin(this.props.players[1].id)} variant="contained" size="large"
                                     color="secondary"
                                     aria-readonly={this.props.isLoading}
                                     disabled={this.props.listAvailable.length === 0 || (this.props.switchActive && this.props.selectedFighter.length > 0) || this.props.isLoading}>
@@ -88,9 +88,9 @@ class Dualists extends React.Component {
 
                     <Grid item sm={1} xs={12} style={{backgroundColor:"white",borderRadius:5,padding:10}}>
                         <TextField style={{paddingBottom:10}} id="p2wins" label="Wins" variant="outlined"
-                                   value={this.props.players[1].p2_wins ? this.props.players[1].p2_wins : ""} disabled={true} />
+                                   value={this.props.players[1].wins ? this.props.players[1].wins : ""} disabled={true} />
                         <TextField id="p2score" label="Score" variant="outlined"
-                                   value={this.props.players[1].p2_score ? this.props.players[1].p2_score : ""} disabled={true}/>
+                                   value={this.props.players[1].score ? this.props.players[1].score : ""} disabled={true}/>
                     </Grid>
                     <Grid item sm={3} xs={12} >
                         <Card style={{backgroundImage:`url(${bgimg2})`,backgroundSize: 'cover',}}>

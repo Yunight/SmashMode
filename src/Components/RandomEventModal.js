@@ -26,7 +26,7 @@ class RandomEventModal extends React.Component {
         }
 
         return (
-            <Dialog onClose={() => this.props.handleEventClose()} aria-labelledby="customized-dialog-title" open={this.props.showEventModal} fullWidth={true}>
+            <Dialog onClose={(e) => this.props.handleEventClose(e,"clickaway")} aria-labelledby="customized-dialog-title" open={this.props.showEventModal} fullWidth={true}>
                 <DialogTitle id="customized-dialog-title" style={{textAlign:"center"}} onClose={() => this.props.handleEventClose()} >
                     <span className={"smalldevice"} >{this.state.eventDialogues[1].h1}</span>
                 </DialogTitle>
@@ -39,16 +39,17 @@ class RandomEventModal extends React.Component {
                         <h2 className={'eventBonusMalus malusTxt'} >Défaite : {this.state.eventDialogues[1].malus}</h2>
                         <h4 style={{textAlign:"right",paddingTop:20}}> Signé : {this.state.eventDialogues[1].from}</h4>
                     </Grid>
+                    <Grid item sm={12} xs={12} className={"textAligncenter"}>
 
-                    <Grid container style={{textAlign:"right"}}>
                             <Button onClick={(e) => this.props.handleEventWin(this.props.fightersList)}
                                     variant="contained"
                                     size="large"
                                     color="secondary"
                                     //disabled={!this.state.selectedFighter.length > 0 && !this.state.isLoading}
-                                    className={"winBtn basicBtn"}>
+                                    className={"winBtn basicBtn"}
+                            >
+                                <h4>P1 WIN</h4>
 
-                                VICTOIRE
                             </Button>
 
                             <Button onClick={(e) => this.props.handleEventLose(this.props.fightersList)}
@@ -57,10 +58,12 @@ class RandomEventModal extends React.Component {
                                     color="secondary"
                                     className={"loseBtn basicBtn"}
                                     //disabled={!this.state.selectedFighter.length > 0}
-                            >DÉFAITE
+                            >
+                                <h4>P2 WIN</h4>
 
                             </Button>
-                        </Grid>
+
+                    </Grid>
                 </DialogContent>
 
             </Dialog>

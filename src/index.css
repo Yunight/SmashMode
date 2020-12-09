@@ -21,7 +21,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow: hidden;
+    overflow-y: auto;
     background-image: url('otherPictures/SmashUltimate.jpg');
     background-size: cover;
     padding-bottom: 30px;
@@ -53,9 +53,13 @@ body {
 
 .basicBtn{
     height: 50px !important;
-    width: 100px !important;
+    width: 150px !important;
     font-size: 20px !important;
     margin: 10px !important;
+}
+
+.textAligncenter{
+    text-align: center;
 }
 
 .winBtn{
