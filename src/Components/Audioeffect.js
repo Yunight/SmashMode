@@ -12,15 +12,12 @@ class Audioeffect extends React.Component {
         }
     }
     render() {
-
-        let soundEffect = "https://benchi-chen.com/wp-content/uploads/2020/12/Random_Selection.mp3";
-
         return (
             <div style={{display:"none"}}>
                 <AudioPlayer
                     autoPlay={true}
-                    src={this.props.eventCounter === 3 ? this.state.voices[this.props.selectedDialogue].sound : soundEffect}
-                    onPlay={e => console.log("onPlay")}
+                    src={this.state.voices[this.props.selectedDialogue].sound }
+                    onPlay={e => console.log("onPlay" + this.props.eventCounter + " " + this.props.selectedDialogue)}
                     // other props here
                 />
             </div>

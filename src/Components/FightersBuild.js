@@ -31,6 +31,7 @@ class FightersBuild extends React.Component {
             selectedLanguage:"fr_FR",
             eventDialogues : eventDialogues,
             selectedDialogue : 0,
+            EventTier : 0,
             eventCounter : 0,
             setStyle: true,
             fightersList: fighters,
@@ -49,14 +50,14 @@ class FightersBuild extends React.Component {
             players:[{
                         id:"p1",
                         name:"Joueur 1",
-                        wins:null,
-                        score:null
+                        wins:0,
+                        score:0
                      },
                     {
                         id:"p2",
                         name:"Joueur 2",
-                        wins:null,
-                        score:null,
+                        wins:0,
+                        score:0,
                     }],
 
 
@@ -101,49 +102,128 @@ class FightersBuild extends React.Component {
 
     }
 
-    handleRandom = (fighters_list) => {
-        let selectedFighter = [];
-        this.setState((state, props) => ({
-            isLoading: true,
-        }));
+    setTier = (p1,p2) => {
+        if(p1.wins > p2.wins){
+            let diff = Math.abs(p1.wins,p2.wins);
+            console.log("Player 1 lead by" + diff);
+            if(diff <3){
+                console.log("P1 set Event Tier 1");
+                this.setState((state, props) => ({
+                    EventTier: 1,
+                }));
+            }else if(diff <7){
+                console.log("P1 set Event Tier 2");
+                this.setState((state, props) => ({
+                    EventTier: 2,
+                }));
+            }else if(diff >6){
+                console.log("P1 set Event Tier 3");
+                this.setState((state, props) => ({
+                    EventTier: 3,
+                }));
+            }
 
-        let eventPlayer = Math.floor(Math.random() * Math.floor(2));
+        }else if(p2.wins > p1.wins){
+            let diff = Math.abs(p1.wins,p2.wins);
+            console.log("Player 2 lead by " + diff);
+            if(diff <3){
+                console.log("P2 set Event Tier 1");
+                this.setState((state, props) => ({
+                    EventTier: 1,
+                }));
+            }else if(diff <7){
+                console.log("P2 set Event Tier 2");
+                this.setState((state, props) => ({
+                    EventTier: 2,
+                }));
+            }else if(diff >6){
+                console.log("P2 set Event Tier 3");
+                this.setState((state, props) => ({
+                    EventTier: 3,
+                }));
+            }
+        }else {
+            console.log("Default Tier" );
+            this.setState((state, props) => ({
+                EventTier: 1,
+            }));
+        }
+    }
+
+    setEventDialog = () => {
 
         let listAvailableEvent = this.state.eventDialogues;
         let anyDialogAvailable = false;
 
+        let T1Left = false;
+        let T2Left = false;
+        let T3Left = false;
+
         listAvailableEvent.map(event => {
-            if(event.disabled === false){
+            if(event.tier === 1 ){
+                T1Left = true;
+            }else if(event.tier === 2 ){
+                T2Left = true;
+            }else if(event.tier === 3 ){
+                T3Left = true;
+            }
+        })
+
+        listAvailableEvent.map(event => {
+            if(event.disabled === false ){
                 anyDialogAvailable = true;
             }else{
                 this.setState((state, props) => ({
                     selectedDialogue : 0,
-
                 }));
             }
         })
 
-        if(listAvailableEvent.length > 0 && anyDialogAvailable && this.state.eventCounter === 3){
 
-            let randomEvent = this.getRandomInt(listAvailableEvent.length);
+        if(listAvailableEvent.length > 0 && anyDialogAvailable && this.state.eventCounter === 3 ){
+            let randomEvent = 0;
 
-            do {
-                randomEvent = this.getRandomInt(listAvailableEvent.length);
-            } while (listAvailableEvent[randomEvent].disabled === true && listAvailableEvent.length > 0);
-            listAvailableEvent[randomEvent].disabled = true;
+                    do {
+                        randomEvent = this.getRandomInt(listAvailableEvent.length);
+                    } while (listAvailableEvent[randomEvent].disabled === true && listAvailableEvent.length > 0 );
 
-            this.setState((state, props) => ({
-                eventDialogues :listAvailableEvent,
-                selectedDialogue : randomEvent,
-                autoPlay: true,
-                eventCounter:0,
-            }));
+                    listAvailableEvent[randomEvent].disabled = true;
+
+
+                    this.setState((state, props) => ({
+                        eventDialogues :listAvailableEvent,
+                        selectedDialogue : randomEvent,
+                        autoPlay: true,
+                        eventCounter:0,
+                    }));
+
         }else{
             let eventCounterNb = this.state.eventCounter;
             this.setState((state, props) => ({
                 eventCounter : eventCounterNb+1
             }));
         }
+
+        if(anyDialogAvailable && this.state.eventCounter === 3){
+            this.randomEvent();
+            setTimeout(this.stopPlay,4000);
+        }
+
+    }
+
+    handleRandom = (fighters_list) => {
+        let selectedFighter = [];
+        this.setState((state, props) => ({
+            isLoading: true,
+        }));
+        let eventPlayer = Math.floor(Math.random() * Math.floor(2));
+
+
+        let p1 = this.state.players[0];
+        let p2 = this.state.players[1];
+
+        this.setTier(p1,p2);
+        this.setEventDialog();
 
         if (fighters_list.length > 0) {
             let charIndex = [];
@@ -202,17 +282,10 @@ class FightersBuild extends React.Component {
                 isLoading: true,
                 charIndex : charIndex,
                 eventPlayer : eventPlayer,
-                autoPlay: true,
                 isFighting : true,
             }));
 
         }
-        if(anyDialogAvailable && this.state.eventCounter === 3){
-            this.randomEvent();
-        }
-
-        setTimeout(this.stopPlay,3000)
-
 
     };
 
@@ -317,32 +390,81 @@ class FightersBuild extends React.Component {
     };
 
 
-    handleEventWin = (eventPlayer,winner) => {
+    handleEventWin = (mode,eventPlayer,winner, points, result) => {
 
         let p1 = this.state.players[0];
         let p2 = this.state.players[1];
-
         //this.handleClose();
-        if(winner === "p1"){
-            p1.wins = p1.wins+1;
-            p1.score = p1.score+1;
-            this.setState((state, props) => ({
-                isFighting:false,
-                players:[
-                    p1,
-                    p2
-                ]
-            }));
-        }else if(winner === "p2"){
-            p2.wins = p2.wins+1;
-            p2.score = p2.score+1;
-            this.setState((state, props) => ({
-                isFighting:false,
-                players:[
-                    p1,
-                    p2
-                ]
-            }));
+        if(mode === "both"){
+
+            if(winner === "p1"){
+                p1.wins = p1.wins+1;
+                p1.score = p1.score+ parseInt(points);
+                this.setState((state, props) => ({
+                    isFighting:false,
+                    players:[
+                        p1,
+                        p2
+                    ]
+                }));
+            }else if(winner === "p2"){
+                p2.wins = p2.wins+1;
+                p2.score = p2.score+parseInt(points);
+                this.setState((state, props) => ({
+                    isFighting:false,
+                    players:[
+                        p1,
+                        p2
+                    ]
+                }));
+            }
+        }
+
+        if(mode ==="winner"){
+            if(this.state.players[eventPlayer].id === "p1"){
+                if(result === "success"){
+                    p1.wins = p1.wins+1;
+                    p1.score = p1.score+ parseInt(points);
+                    this.setState((state, props) => ({
+                        isFighting:false,
+                        players:[
+                            p1,
+                            p2
+                        ]
+                    }));
+                }else if(result === "failed"){
+                    p2.wins = p2.wins+1;
+                    this.setState((state, props) => ({
+                        isFighting:false,
+                        players:[
+                            p1,
+                            p2
+                        ]
+                    }));
+                }
+
+            }else if(this.state.players[eventPlayer].id === "p2"){
+                if(result === "success"){
+                    p2.wins = p2.wins+1;
+                    p2.score = p2.score+ parseInt(points);
+                    this.setState((state, props) => ({
+                        isFighting:false,
+                        players:[
+                            p1,
+                            p2
+                        ]
+                    }));
+                }else if(result === "failed"){
+                    p1.wins = p1.wins+1;
+                    this.setState((state, props) => ({
+                        isFighting:false,
+                        players:[
+                            p1,
+                            p2
+                        ]
+                    }));
+                }
+            }
         }
 
         this.setState((state, props) => ({
@@ -350,6 +472,8 @@ class FightersBuild extends React.Component {
         }));
 
     };
+
+
 
     handleEventClose = (event, reason) => {
 

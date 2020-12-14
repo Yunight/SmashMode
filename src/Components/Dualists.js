@@ -49,7 +49,7 @@ class Dualists extends React.Component {
                                    value={this.props.players[0].score ? this.props.players[0].score : ""} disabled={true}/>
                     </Grid>
 
-                    {(this.props.isFighting === false || this.props.showEventModal == true) &&
+                    {(this.props.isFighting === false || this.props.showEventModal === true) &&
                         <Grid item sm={4} xs={12}>
                             <Button onClick={(e) => this.props.handleRandom(this.props.fightersList)} variant="contained" size="large"
                                     color="primary"
@@ -63,7 +63,7 @@ class Dualists extends React.Component {
                         </Grid>
                     }
 
-                    {(this.props.isFighting === true && this.props.showEventModal == false)  &&
+                    {(this.props.isFighting === true && this.props.showEventModal === false)  &&
                         <Grid item sm={4} xs={12} >
                             <Button className={"btnfullWidth p1bg" }
 
@@ -71,7 +71,7 @@ class Dualists extends React.Component {
                                     color="primary"
                                     aria-readonly={this.props.isLoading}
                                     disabled={this.props.listAvailable.length === 0 || (this.props.switchActive && this.props.selectedFighter.length > 0) || this.props.isLoading}>
-                                    <h2>P1 WIN</h2>
+                                    <h2>{this.props.players[0].name} WIN</h2>
                             </Button>
 
                             <Button className={"btnfullWidth p2bg"}
@@ -80,7 +80,7 @@ class Dualists extends React.Component {
                                     color="secondary"
                                     aria-readonly={this.props.isLoading}
                                     disabled={this.props.listAvailable.length === 0 || (this.props.switchActive && this.props.selectedFighter.length > 0) || this.props.isLoading}>
-                                    <h2 >P2 WIN</h2>
+                                    <h2 >{this.props.players[1].name} WIN</h2>
                             </Button>
                         </Grid>
                     }

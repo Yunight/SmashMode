@@ -3,11 +3,9 @@ import Grid from "@material-ui/core/Grid";
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
-import objection from "../event/img/objection.png";
 import textBox from "../event/img/textbox3.png";
 import eventDialogues from "../event/constants/dialogue.json";
 import Button from "@material-ui/core/Button";
-import {Image} from "@material-ui/icons";
 
 class RandomEventModal extends React.Component {
 
@@ -53,7 +51,12 @@ class RandomEventModal extends React.Component {
                     {this.state.eventDialogues[this.props.selectedDialogue].affecting === "both" &&
                     <Grid item sm={12} xs={12} className={"textAligncenter"}>
 
-                        <Button onClick={(e) => this.props.handleEventWin(this.props.eventPlayer,"p1")}
+                        <Button onClick={(e) => this.props.handleEventWin(
+                                "both",
+                                this.props.eventPlayer,
+                                "p1",
+                                this.state.eventDialogues[this.props.selectedDialogue].bonus_effect)}
+
                                 variant="contained"
                                 size="large"
                                 color="secondary"
@@ -64,7 +67,12 @@ class RandomEventModal extends React.Component {
 
                         </Button>
 
-                        <Button onClick={(e) => this.props.handleEventWin(this.props.eventPlayer,"p2")}
+                        <Button onClick={(e) => this.props.handleEventWin(
+                                "both",
+                                this.props.eventPlayer,
+                                "p2",
+                                this.state.eventDialogues[this.props.selectedDialogue].bonus_effect)}
+
                                 variant="contained"
                                 size="large"
                                 color="secondary"
@@ -94,7 +102,13 @@ class RandomEventModal extends React.Component {
                     {this.state.eventDialogues[this.props.selectedDialogue].affecting === "winner" &&
                         <Grid item sm={12} xs={12} className={"textAligncenter"}>
 
-                                <Button onClick={(e) => this.props.handleEventWin(this.props.eventPlayer,"p1")}
+                                <Button onClick={(e) => this.props.handleEventWin(
+                                        "winner",
+                                        this.props.eventPlayer,
+                                        "",
+                                        this.state.eventDialogues[this.props.selectedDialogue].bonus_effect,
+                                        "success")}
+
                                         variant="contained"
                                         size="large"
                                         color="secondary"
@@ -105,7 +119,13 @@ class RandomEventModal extends React.Component {
 
                                 </Button>
 
-                                <Button onClick={(e) => this.props.handleEventWin(this.props.eventPlayer,"p2")}
+                                <Button onClick={(e) => this.props.handleEventWin(
+                                        "winner",
+                                        this.props.eventPlayer,
+                                        "",
+                                        this.state.eventDialogues[this.props.selectedDialogue].bonus_effect,
+                                        "failed")}
+
                                         variant="contained"
                                         size="large"
                                         color="secondary"
