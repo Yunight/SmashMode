@@ -22,6 +22,7 @@ import FR from '../otherPictures/FR.png';
 import UK from '../otherPictures/UK.png';
 import JP from '../otherPictures/JP.png';
 import eventDialogues from "../event/constants/dialogue.json";
+import RuleModal from "./RuleModal";
 
 class FightersBuild extends React.Component {
 
@@ -37,6 +38,7 @@ class FightersBuild extends React.Component {
             fightersList: fighters,
             showModal: false,
             showFirstModal: false,
+            showRuleModal: true,
             showEventModal: false,
             selectedFighter: [],
             isLoading: false,
@@ -180,9 +182,10 @@ class FightersBuild extends React.Component {
         })
 
 
-        if(listAvailableEvent.length > 0 && anyDialogAvailable && this.state.eventCounter === 3 ){
-            let randomEvent = 0;
 
+
+        if(listAvailableEvent.length > 0 && anyDialogAvailable && this.state.eventCounter === 3 ){
+                    let randomEvent = 0;
                     do {
                         randomEvent = this.getRandomInt(listAvailableEvent.length);
                     } while (listAvailableEvent[randomEvent].disabled === true && listAvailableEvent.length > 0 );
@@ -481,9 +484,18 @@ class FightersBuild extends React.Component {
             return;
         }
 
+        if (reason === 'isRule') {
+            this.setState((state, props) => ({
+                showRuleModal:false,
+                showFirstModal:true,
+            }));
+            return ;
+        }
+
         this.setState((state, props) => ({
             showEventModal:false,
             showFirstModal:false,
+            showRuleModal:false,
         }));
     };
 
@@ -684,6 +696,13 @@ class FightersBuild extends React.Component {
 
                 <LandingModal
                     showFirstModal={this.state.showFirstModal}
+                    handleEventClose={this.handleEventClose}
+                    playersToUpdate={this.playersToUpdate}
+                    players={this.state.players}
+                />
+
+                <RuleModal
+                    showRuleModal={this.state.showRuleModal}
                     handleEventClose={this.handleEventClose}
                     playersToUpdate={this.playersToUpdate}
                     players={this.state.players}

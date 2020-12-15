@@ -200,6 +200,23 @@ body {
     margin: 0 10px;
 }
 
+
+.ruleimg{
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+
+}
+
+autoimg{
+    max-width: 100%;
+    height: auto;
+}
+
 @media (max-width: 1281px) {
 
 

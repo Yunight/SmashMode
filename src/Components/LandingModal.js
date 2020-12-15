@@ -47,14 +47,14 @@ class LandingModal extends React.Component {
                     <Grid container alignItems="flex-end"  >
 
                         <Grid item xs={4} >
-                            <TextField id="p1" label="Player 1" required value={this.state.p1_name} onChange={(e) =>this.playersToUpdate(e,"p1")}/>
+                            <TextField inputProps={{ maxLength: 12 }} id="p1" label="Player 1" required value={this.state.p1_name} onChange={(e) =>this.playersToUpdate(e,"p1")}/>
                         </Grid>
                         <Grid item xs={4} style={{textAlign:"center"}}>
                             <img  style={{height:100,backgroundSize: 'contains',backgroundRepeat:"no-repeat"}}
                                   src={vs} alt={"CHARACTER"}/>
                         </Grid>
                         <Grid item xs={4}>
-                            <TextField id="p2" label="Player 2" required value={this.state.p2_name} onChange={(e) =>this.playersToUpdate(e,"p2")}/>
+                            <TextField inputProps={{ maxLength: 12 }} id="p2" label="Player 2" required value={this.state.p2_name} onChange={(e) =>this.playersToUpdate(e,"p2")}/>
                         </Grid>
 
                     </Grid>
