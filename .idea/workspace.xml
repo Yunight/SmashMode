@@ -20,16 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="steve added">
-      <change afterPath="$PROJECT_DIR$/src/Components/RuleModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/event/event_pics/09_mkleo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/otherPictures/rule_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/otherPictures/rule_bg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/FightersBuild.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FightersBuild.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/LandingModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LandingModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/event/constants/dialogue.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/event/constants/dialogue.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/RuleModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RuleModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/otherPictures/rule_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/otherPictures/rule_bg.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +145,7 @@
       <workItem from="1607172096248" duration="8139000" />
       <workItem from="1607506859711" duration="25799000" />
       <workItem from="1607951829867" duration="14777000" />
-      <workItem from="1608048222119" duration="4993000" />
+      <workItem from="1608048222119" duration="7924000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -354,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607967317748</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Rule Modal and fixing oher stuff">
+      <created>1608053401322</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1608053401322</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +409,8 @@
     <MESSAGE value="Events modals with pictures &amp; sounds" />
     <MESSAGE value="RANDOM btn sounds and events" />
     <MESSAGE value="handling the random event for each type, for both players or only one player.&#10;&#10;90% done overall" />
-    <option name="LAST_COMMIT_MESSAGE" value="handling the random event for each type, for both players or only one player.&#10;&#10;90% done overall" />
+    <MESSAGE value="Rule Modal and fixing oher stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rule Modal and fixing oher stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

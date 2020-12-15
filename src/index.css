@@ -212,9 +212,17 @@ body {
 
 }
 
-autoimg{
+.autoimg{
     max-width: 100%;
     height: auto;
+}
+
+.ruleModal{
+    background-image:url("./otherPictures/rule_bg.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 10px;
 }
 
 @media (max-width: 1281px) {
@@ -223,6 +231,17 @@ autoimg{
 }
 
 @media (max-width: 600px) {
+
+    .topmobile{
+        padding-top: 180px;
+    }
+
+    .flagPosition {
+        float: left;
+        width:100%;
+        padding-top: 10px;
+    }
+
     .topContainer {
         height: 150px;
     }

@@ -668,16 +668,17 @@ class FightersBuild extends React.Component {
                 }
 
                 </Grid>
-                    <Grid container justify="center" spacing={1}>
-                        {this.state.fightersList.map((value, index) => (
-                            <SingleFighter
-                                key={value.id}
-                                value={value}
-                                index={index}
-                                handleStyle={this.handleStyle}
-                            />
-                        ))}
-                    </Grid>
+
+                <Grid container justify="center" spacing={1} className={"topmobile"}>
+                    {this.state.fightersList.map((value, index) => (
+                        <SingleFighter
+                            key={value.id}
+                            value={value}
+                            index={index}
+                            handleStyle={this.handleStyle}
+                        />
+                    ))}
+                </Grid>
 
 
                 <Dualists
@@ -704,8 +705,6 @@ class FightersBuild extends React.Component {
                 <RuleModal
                     showRuleModal={this.state.showRuleModal}
                     handleEventClose={this.handleEventClose}
-                    playersToUpdate={this.playersToUpdate}
-                    players={this.state.players}
                 />
 
                 <RandomEventModal
