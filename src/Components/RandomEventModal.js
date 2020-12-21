@@ -30,7 +30,7 @@ class RandomEventModal extends React.Component {
             eventPlayer = (<span className={"EventPlayer"}>{this.props.players[this.props.eventPlayer].name}</span>)
         }
 
-        return (
+        return (this.props.selectedDialogue > -1 ?
             <Dialog onClose={(e) => this.props.handleEventClose(e,"clickaway")} aria-labelledby="customized-dialog-title" open={this.props.showEventModal} fullWidth={true}>
                 <DialogTitle id="customized-dialog-title" style={{textAlign:"center"}} onClose={() => this.props.handleEventClose()} >
                     <span className={"smalldevice"} >{this.state.eventDialogues[this.props.selectedDialogue].h1 }</span>
@@ -140,7 +140,7 @@ class RandomEventModal extends React.Component {
                     }
                 </DialogContent>
 
-            </Dialog>
+            </Dialog> : null
         );
     }
 }

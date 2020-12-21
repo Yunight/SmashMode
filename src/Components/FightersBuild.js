@@ -31,14 +31,14 @@ class FightersBuild extends React.Component {
         this.state = {
             selectedLanguage:"fr_FR",
             eventDialogues : eventDialogues,
-            selectedDialogue : 0,
+            selectedDialogue : -1,
             EventTier : 0,
             eventCounter : 0,
             setStyle: true,
             fightersList: fighters,
             showModal: false,
             showFirstModal: false,
-            showRuleModal: true,
+            showRuleModal: false,
             showEventModal: false,
             selectedFighter: [],
             isLoading: false,
@@ -77,14 +77,9 @@ class FightersBuild extends React.Component {
     }
 
     randomEvent = () => {
-
-       // if(Math.floor(Math.random() * Math.floor(2)) == 1){
-            this.setState((state, props) => ({
-                showEventModal: true,
-                isLoading: true,
-            }));
-        //}
-
+        this.setState((state, props) => ({
+            isLoading: true,
+        }));
     }
 
     playersToUpdate = (player1, player2) => {
@@ -105,47 +100,56 @@ class FightersBuild extends React.Component {
     }
 
     setTier = (p1,p2) => {
+
+        let eventPlayer = Math.floor(Math.random() * Math.floor(2));
+
         if(p1.wins > p2.wins){
-            let diff = Math.abs(p1.wins,p2.wins);
+            let diff = p1.wins - p2.wins;
             console.log("Player 1 lead by" + diff);
             if(diff <3){
                 console.log("P1 set Event Tier 1");
                 this.setState((state, props) => ({
                     EventTier: 1,
+                    eventPlayer:eventPlayer
                 }));
             }else if(diff <7){
                 console.log("P1 set Event Tier 2");
                 this.setState((state, props) => ({
                     EventTier: 2,
+                    eventPlayer:eventPlayer
                 }));
             }else if(diff >6){
                 console.log("P1 set Event Tier 3");
                 this.setState((state, props) => ({
                     EventTier: 3,
+                    eventPlayer:0
                 }));
             }
 
         }else if(p2.wins > p1.wins){
-            let diff = Math.abs(p1.wins,p2.wins);
+            let diff = p2.wins - p1.wins;
             console.log("Player 2 lead by " + diff);
             if(diff <3){
                 console.log("P2 set Event Tier 1");
                 this.setState((state, props) => ({
                     EventTier: 1,
+                    eventPlayer:eventPlayer
                 }));
             }else if(diff <7){
                 console.log("P2 set Event Tier 2");
                 this.setState((state, props) => ({
                     EventTier: 2,
+                    eventPlayer:eventPlayer
                 }));
             }else if(diff >6){
                 console.log("P2 set Event Tier 3");
                 this.setState((state, props) => ({
                     EventTier: 3,
+                    eventPlayer:1
                 }));
             }
         }else {
-            console.log("Default Tier" );
+            console.log("Default Tier : Tier 1" );
             this.setState((state, props) => ({
                 EventTier: 1,
             }));
@@ -157,57 +161,54 @@ class FightersBuild extends React.Component {
         let listAvailableEvent = this.state.eventDialogues;
         let anyDialogAvailable = false;
 
-        let T1Left = false;
-        let T2Left = false;
-        let T3Left = false;
-
-        listAvailableEvent.map(event => {
-            if(event.tier === 1 ){
-                T1Left = true;
-            }else if(event.tier === 2 ){
-                T2Left = true;
-            }else if(event.tier === 3 ){
-                T3Left = true;
-            }
-        })
-
-        listAvailableEvent.map(event => {
+        listAvailableEvent.forEach(event => {
             if(event.disabled === false ){
                 anyDialogAvailable = true;
             }else{
                 this.setState((state, props) => ({
-                    selectedDialogue : 0,
+                    selectedDialogue : -1,
                 }));
             }
         })
 
+        let filteredListAvailableEvent = listAvailableEvent.filter(event => event.tier === this.state.EventTier)
+        filteredListAvailableEvent = filteredListAvailableEvent.filter(event => event.disabled === false);
+        console.log("filteredListAvailableEvent before " )
+        console.table(filteredListAvailableEvent)
 
+        if(filteredListAvailableEvent.length > 0 && anyDialogAvailable && this.state.eventCounter === 1 ){
+            let randomEvent = 0;
+            do {
+                randomEvent = this.getRandomInt(filteredListAvailableEvent.length);
+            } while (filteredListAvailableEvent[randomEvent].disabled === true && filteredListAvailableEvent.length > 0 );
 
+            let chosenEvent = parseInt(filteredListAvailableEvent[randomEvent].id)
+            listAvailableEvent[chosenEvent].disabled = true;
 
-        if(listAvailableEvent.length > 0 && anyDialogAvailable && this.state.eventCounter === 3 ){
-                    let randomEvent = 0;
-                    do {
-                        randomEvent = this.getRandomInt(listAvailableEvent.length);
-                    } while (listAvailableEvent[randomEvent].disabled === true && listAvailableEvent.length > 0 );
+            this.setState((state, props) => ({
+                eventDialogues :listAvailableEvent,
+                selectedDialogue : chosenEvent,
+                autoPlay: true,
+                eventCounter:0,
+                showEventModal: true,
 
-                    listAvailableEvent[randomEvent].disabled = true;
-
-
-                    this.setState((state, props) => ({
-                        eventDialogues :listAvailableEvent,
-                        selectedDialogue : randomEvent,
-                        autoPlay: true,
-                        eventCounter:0,
-                    }));
-
+            }));
         }else{
             let eventCounterNb = this.state.eventCounter;
+            if(eventCounterNb > 3) {
+                eventCounterNb = 0;
+            }else{
+                eventCounterNb = eventCounterNb +1
+            }
+
             this.setState((state, props) => ({
-                eventCounter : eventCounterNb+1
+                eventCounter : eventCounterNb
             }));
         }
+        console.log("filteredListAvailableEvent after " )
+        console.table(filteredListAvailableEvent)
 
-        if(anyDialogAvailable && this.state.eventCounter === 3){
+        if(anyDialogAvailable && this.state.eventCounter === 1){
             this.randomEvent();
             setTimeout(this.stopPlay,4000);
         }
@@ -219,7 +220,6 @@ class FightersBuild extends React.Component {
         this.setState((state, props) => ({
             isLoading: true,
         }));
-        let eventPlayer = Math.floor(Math.random() * Math.floor(2));
 
 
         let p1 = this.state.players[0];
@@ -227,8 +227,8 @@ class FightersBuild extends React.Component {
 
         this.setTier(p1,p2);
         this.setEventDialog();
-
-        if (fighters_list.length > 0) {
+        let listAvailable = this.state.fightersList.filter(fighter => fighter.disabled === false);
+        if (listAvailable.length > 0) {
             let charIndex = [];
             let randomChar = this.getRandomInt(fighters_list.length);
 
@@ -284,7 +284,6 @@ class FightersBuild extends React.Component {
                 selectedFighter: selectedFighter,
                 isLoading: true,
                 charIndex : charIndex,
-                eventPlayer : eventPlayer,
                 isFighting : true,
             }));
 
@@ -437,6 +436,7 @@ class FightersBuild extends React.Component {
                     }));
                 }else if(result === "failed"){
                     p2.wins = p2.wins+1;
+                    p2.score = p2.score + parseInt(points);
                     this.setState((state, props) => ({
                         isFighting:false,
                         players:[
@@ -459,6 +459,7 @@ class FightersBuild extends React.Component {
                     }));
                 }else if(result === "failed"){
                     p1.wins = p1.wins+1;
+                    p1.score = p1.score + parseInt(points);
                     this.setState((state, props) => ({
                         isFighting:false,
                         players:[

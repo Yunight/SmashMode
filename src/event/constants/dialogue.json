@@ -39,7 +39,7 @@
     "malus_effect": "+2",
     "from": "Captain Falcon",
     "disabled" : false,
-    "sound": "https://www.myinstants.com/media/sounds/falconpunch.mp3"
+    "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/falconpunch.mp3"
   },
   {
     "id": "03",
@@ -115,7 +115,7 @@
     "id": "08",
     "tier": 3,
     "h1": "J'ai jamais perdu en EU",
-    "h2": "Doit jouer à une main",
+    "h2": "Doit jouer Little Mac",
     "affecting": "winner",
     "bonus": "Gagne 8 points",
     "bonus_effect": "8",
@@ -124,5 +124,32 @@
     "from": "Super Gluto",
     "disabled" : false,
     "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/gluto.mp3"
-  }
+  },
+  {
+    "id": "09",
+    "tier": 3,
+    "h1": "Game 4 MKLeo",
+    "h2": "Doit jouer à une main",
+    "affecting": "winner",
+    "bonus": "Gagne 10 points",
+    "bonus_effect": "8",
+    "malus": "l'opposant gagne 2 points",
+    "malus_effect": "+2",
+    "from": "MKLeo",
+    "disabled" : false,
+    "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/mkleo.mp3"
+  },{
+  "id": "10",
+  "tier": 3,
+  "h1": "Pew Pew Pew",
+  "h2": "Doit SD une stock",
+  "affecting": "winner",
+  "bonus": "Gagne 8 points",
+  "bonus_effect": "7",
+  "malus": "l'opposant gagne 2 points",
+  "malus_effect": "+2",
+  "from": "Pew's Mind",
+  "disabled" : false,
+  "sound": "https://benchi-chen.com/wp-content/uploads/2020/12/pew.mp3"
+}
 ]
