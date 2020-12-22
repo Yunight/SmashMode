@@ -88,6 +88,12 @@ body {
     font-family: 'Segoe UI','Roboto', serif;
 }
 
+.winnerTitle {
+    font-size: 40px;
+    margin: auto;
+    font-family: 'Segoe UI','Roboto', serif;
+}
+
 .ssf4{
     font-family:"SSFIV"
 }
@@ -224,6 +230,32 @@ body {
     background-position:center;
     border-radius: 10px;
 }
+
+.winningModal{
+    background-image:url("./otherPictures/winning_screen.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    min-height: 400px;
+    border-radius: 10px;
+
+}
+
+.winningTop{
+    margin-top: 25%;
+
+}
+
+.winningstyle{
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+}
+
 
 @media (max-width: 1281px) {
 

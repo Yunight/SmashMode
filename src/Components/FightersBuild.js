@@ -23,6 +23,7 @@ import UK from '../otherPictures/UK.png';
 import JP from '../otherPictures/JP.png';
 import eventDialogues from "../event/constants/dialogue.json";
 import RuleModal from "./RuleModal";
+import WinnerModal from "../WinnerModal";
 
 class FightersBuild extends React.Component {
 
@@ -36,9 +37,10 @@ class FightersBuild extends React.Component {
             eventCounter : 0,
             setStyle: true,
             fightersList: fighters,
+            showWinningModal:false,
             showModal: false,
             showFirstModal: false,
-            showRuleModal: false,
+            showRuleModal: true,
             showEventModal: false,
             selectedFighter: [],
             isLoading: false,
@@ -176,7 +178,7 @@ class FightersBuild extends React.Component {
         console.log("filteredListAvailableEvent before " )
         console.table(filteredListAvailableEvent)
 
-        if(filteredListAvailableEvent.length > 0 && anyDialogAvailable && this.state.eventCounter === 1 ){
+        if(filteredListAvailableEvent.length > 0 && anyDialogAvailable && this.state.eventCounter === 3 ){
             let randomEvent = 0;
             do {
                 randomEvent = this.getRandomInt(filteredListAvailableEvent.length);
@@ -208,14 +210,26 @@ class FightersBuild extends React.Component {
         console.log("filteredListAvailableEvent after " )
         console.table(filteredListAvailableEvent)
 
-        if(anyDialogAvailable && this.state.eventCounter === 1){
+        if(anyDialogAvailable && this.state.eventCounter === 3){
             this.randomEvent();
             setTimeout(this.stopPlay,4000);
         }
 
     }
 
+    checkIfOver = (listAvailable) => {
+        console.log("Not opening winner modal");
+        //if (listAvailable < 2){
+            console.log("opening winner modal");
+            this.setState((state, props) => ({
+                showWinningModal : true,
+            }));
+        //}
+    }
+
     handleRandom = (fighters_list) => {
+
+
         let selectedFighter = [];
         this.setState((state, props) => ({
             isLoading: true,
@@ -277,6 +291,8 @@ class FightersBuild extends React.Component {
             }
             charIndex.push(randomChar);
 
+            //this.checkIfOver(listAvailable);
+
             this.setState((state, props) => ({
 
                 fightersList: tempFightersList,
@@ -298,27 +314,23 @@ class FightersBuild extends React.Component {
                 return fighter.disabled = false;
         });
 
+        let players = this.state.players;
+
+        players[0].score = 0;
+        players[0].wins = 0;
+
+        players[1].score = 0;
+        players[1].wins = 0;
+
         this.setState((state, props) => ({
             fightersList: tempFightersList,
             selectedFighter: "",
             currentRecord: 0,
-            showFirstModal:true,
             charIndex : "",
             autoplay: false,
             eventPlayer : null,
             isFighting : false,
-            players:[{
-                id:"p1",
-                name:"Joueur 1",
-                wins:null,
-                score:null
-            },
-                {
-                    id:"p2",
-                    name:"Joueur 2",
-                    wins:null,
-                    score:null,
-                }]
+            players:players,
         }));
     };
 
@@ -493,10 +505,18 @@ class FightersBuild extends React.Component {
             return ;
         }
 
+        if (reason === 'isWinner') {
+            this.setState((state, props) => ({
+                showWinningModal : false,
+            }));
+            return ;
+        }
+
         this.setState((state, props) => ({
             showEventModal:false,
             showFirstModal:false,
             showRuleModal:false,
+            showWinningModal : false,
         }));
     };
 
@@ -683,6 +703,7 @@ class FightersBuild extends React.Component {
 
 
                 <Dualists
+                    checkIfOver={this.checkIfOver}
                     listAvailable = {listAvailable}
                     selectedFighter={ this.state.selectedFighter}
                     players={this.state.players}
@@ -706,6 +727,12 @@ class FightersBuild extends React.Component {
                 <RuleModal
                     showRuleModal={this.state.showRuleModal}
                     handleEventClose={this.handleEventClose}
+                />
+
+                <WinnerModal
+                    showWinningModal={this.state.showWinningModal}
+                    handleEventClose={this.handleEventClose}
+                    players={this.state.players}
                 />
 
                 <RandomEventModal

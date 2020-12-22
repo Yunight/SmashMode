@@ -22,6 +22,8 @@ class Dualists extends React.Component {
 
         const images_large = importAll(require.context('../img_larges', false, /\.(png|jpe?g|svg)$/));
 
+        let hasWinner = this.props.listAvailable.length < 2 ? true : false;
+
         return (
             <Container>
                 <Grid container spacing={3} style={{textAlign: "center"}}
@@ -49,7 +51,7 @@ class Dualists extends React.Component {
                                    value={this.props.players[0].score ? this.props.players[0].score : ""} disabled={true}/>
                     </Grid>
 
-                    {(this.props.isFighting === false || this.props.showEventModal === true) &&
+                    {(this.props.isFighting === false  && !hasWinner) &&
                         <Grid item sm={4} xs={12}>
                             <Button onClick={(e) => this.props.handleRandom(this.props.fightersList)} variant="contained" size="large"
                                     color="primary"
@@ -63,7 +65,20 @@ class Dualists extends React.Component {
                         </Grid>
                     }
 
-                    {(this.props.isFighting === true && this.props.showEventModal === false)  &&
+                    {hasWinner &&
+                        <Grid item sm={4} xs={12}>
+                            <Button onClick={(e) => this.props.checkIfOver(this.props.listAvailable)} variant="contained" size="large"
+                                    color="primary"
+                                    aria-readonly={this.props.isLoading}
+                                    style={{backgroundImage:`url(${btnbg})`,backgroundSize: 'cover'}}>
+                                    <h1 className={"winnerTitle"}>AFFICHER LE GAGNANT</h1>
+                                {this.BoopButton}
+                            </Button>
+                        </Grid>
+                    }
+
+
+                    {(this.props.isFighting === true && !hasWinner)  &&
                         <Grid item sm={4} xs={12} >
                             <Button className={"btnfullWidth p1bg" }
 
@@ -85,13 +100,13 @@ class Dualists extends React.Component {
                         </Grid>
                     }
 
-
                     <Grid item sm={1} xs={12} style={{backgroundColor:"white",borderRadius:5,padding:10}}>
                         <TextField style={{paddingBottom:10}} id="p2wins" label="Wins" variant="outlined"
                                    value={this.props.players[1].wins ? this.props.players[1].wins : ""} disabled={true} />
                         <TextField id="p2score" label="Score" variant="outlined"
                                    value={this.props.players[1].score ? this.props.players[1].score : ""} disabled={true}/>
                     </Grid>
+
                     <Grid item sm={3} xs={12} >
                         <Card style={{backgroundImage:`url(${bgimg2})`,backgroundSize: 'cover',}}>
                             <CardActionArea>
