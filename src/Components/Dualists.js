@@ -65,7 +65,7 @@ class Dualists extends React.Component {
                         </Grid>
                     }
 
-                    {hasWinner &&
+                    {(hasWinner && this.props.isFighting === false) &&
                         <Grid item sm={4} xs={12}>
                             <Button onClick={(e) => this.props.checkIfOver(this.props.listAvailable)} variant="contained" size="large"
                                     color="primary"
@@ -78,7 +78,7 @@ class Dualists extends React.Component {
                     }
 
 
-                    {(this.props.isFighting === true && !hasWinner)  &&
+                    {(this.props.isFighting === true )  &&
                         <Grid item sm={4} xs={12} >
                             <Button className={"btnfullWidth p1bg" }
 

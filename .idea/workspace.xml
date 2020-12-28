@@ -23,7 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="steve added">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Dualists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dualists.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +150,9 @@
       <workItem from="1608201635933" duration="2000" />
       <workItem from="1608203013712" duration="1822000" />
       <workItem from="1608560048547" duration="11511000" />
-      <workItem from="1608639195342" duration="12960000" />
+      <workItem from="1608639195342" duration="15274000" />
+      <workItem from="1609092776741" duration="2690000" />
+      <workItem from="1609164421276" duration="740000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -381,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608652467852</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="updating version">
+      <created>1608652556044</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1608652556044</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +422,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="characters pictures" />
     <MESSAGE value="making the button smaller" />
     <MESSAGE value="title change" />
     <MESSAGE value="logo &amp; favicon changes" />
@@ -436,7 +446,8 @@
     <MESSAGE value="Rule Modal and fixing responsive stuff" />
     <MESSAGE value="working event tier" />
     <MESSAGE value="final commit for 1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="final commit for 1.2" />
+    <MESSAGE value="updating version" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
