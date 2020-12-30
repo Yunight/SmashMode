@@ -448,7 +448,7 @@ class FightersBuild extends React.Component {
                     }));
                 }else if(result === "failed"){
                     p2.wins = p2.wins+1;
-                    p2.score = p2.score + parseInt(points);
+                    //p2.score = p2.score + parseInt(points);
                     this.setState((state, props) => ({
                         isFighting:false,
                         players:[
@@ -471,7 +471,7 @@ class FightersBuild extends React.Component {
                     }));
                 }else if(result === "failed"){
                     p1.wins = p1.wins+1;
-                    p1.score = p1.score + parseInt(points);
+                    //p1.score = p1.score + parseInt(points);
                     this.setState((state, props) => ({
                         isFighting:false,
                         players:[

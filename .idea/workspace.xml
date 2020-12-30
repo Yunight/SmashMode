@@ -25,7 +25,8 @@
     <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="steve added">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Dualists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dualists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/FightersBuild.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FightersBuild.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/event/constants/dialogue.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/event/constants/dialogue.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +153,9 @@
       <workItem from="1608560048547" duration="11511000" />
       <workItem from="1608639195342" duration="15274000" />
       <workItem from="1609092776741" duration="2690000" />
-      <workItem from="1609164421276" duration="740000" />
+      <workItem from="1609164421276" duration="893000" />
+      <workItem from="1609343410556" duration="10000" />
+      <workItem from="1609343448794" duration="222000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -392,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608652556044</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Winner fix">
+      <created>1609165273224</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1609165273224</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +432,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="making the button smaller" />
     <MESSAGE value="title change" />
     <MESSAGE value="logo &amp; favicon changes" />
     <MESSAGE value="deploying github page" />
@@ -447,7 +456,8 @@
     <MESSAGE value="working event tier" />
     <MESSAGE value="final commit for 1.2" />
     <MESSAGE value="updating version" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating version" />
+    <MESSAGE value="Winner fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Winner fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
