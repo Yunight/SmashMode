@@ -3138,7 +3138,7 @@
   "displayNameEnSecondary": "STEVE / ALEX",
   "fileSecondary": "steve",
   "slug": "cat02_fighter_77"
-},    {
+},{
   "id": "f081",
   "displayNum": "78",
   "dlc": 1,
@@ -3178,6 +3178,46 @@
   "displayNameEnSecondary": "SEPHIROTH",
   "fileSecondary": "sephiroth",
   "slug": "cat02_fighter_78"
-}
+},{
+    "id": "f082",
+    "displayNum": "79-80",
+    "dlc": 1,
+    "new": 1,
+    "displayName": {
+      "ja_JP": "ホムラ / ヒカリ",
+      "en_US": "PYRA / MYTHRA",
+      "en_GB": "PYRA / MYTHRA",
+      "en_AU": "PYRA / MYTHRA",
+      "fr_FR": "PYRA / MYTHRA",
+      "fr_CA": "PYRA / MYTHRA",
+      "es_ES": "PYRA / MYTHRA",
+      "es_LA": "PYRA / MYTHRA",
+      "de_DE": "PYRA / MYTHRA",
+      "it_IT": "PYRA / MYTHRA",
+      "nl_NL": "PYRA / MYTHRA",
+      "ru_RU": "ПАЙРА / МИФРА",
+      "ko_KR": "호무라 / 히카리",
+      "TC": "焰 / 光",
+      "SC": "焰 / 光"
+    },
+    "url": "79-80",
+    "displayNameJa": "ホムラ / ヒカリ",
+    "serialNum": false,
+    "displayNameEn": "PYRA / MYTHRA",
+    "displayNameKo": "호무라 / 히카리",
+    "displayNameSc": "焰 / 光",
+    "displayNameTc": "焰 / 光",
+    "file": "homura",
+    "series": "xenoblade",
+    "dash": 0,
+    "color": "#69e6c3",
+    "colorType": "B",
+    "colorOrder": "0",
+    "type": "",
+    "disabled": true,
+    "displayNameEnSecondary": "PYRA / MYTHRA",
+    "fileSecondary": "pyra",
+    "slug": "cat02_fighter_79-80"
+  }
 ]
 
