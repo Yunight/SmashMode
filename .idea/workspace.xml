@@ -25,8 +25,9 @@
     <list default="true" id="adcc8347-673a-4d3e-b3f0-7439edbcf509" name="Default Changelist" comment="steve added">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Dualists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Dualists.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/FightersBuild.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FightersBuild.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/event/constants/dialogue.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/event/constants/dialogue.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fighter_data/fighters.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/fighter_data/fighters.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/otherPictures" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -155,7 +156,12 @@
       <workItem from="1609092776741" duration="2690000" />
       <workItem from="1609164421276" duration="893000" />
       <workItem from="1609343410556" duration="10000" />
-      <workItem from="1609343448794" duration="222000" />
+      <workItem from="1609343448794" duration="496000" />
+      <workItem from="1609687404138" duration="10000" />
+      <workItem from="1610636224593" duration="650000" />
+      <workItem from="1613731210379" duration="10000" />
+      <workItem from="1613731271424" duration="3805000" />
+      <workItem from="1614868623130" duration="61000" />
     </task>
     <task id="LOCAL-00001" summary="Initial push 24/06/2020">
       <created>1593025787601</created>
@@ -402,19 +408,40 @@
       <option name="project" value="LOCAL" />
       <updated>1609165273224</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="balance after feedback, losing event won't give &quot;score&quot; to opponent anymore">
+      <created>1609343800876</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1609343800876</updated>
+    </task>
+    <task id="LOCAL-00037" summary="rule changing">
+      <created>1609343933059</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1609343933059</updated>
+    </task>
+    <task id="LOCAL-00038" summary="adding Pyra Mythra">
+      <created>1613733951252</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1613733951252</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
+    <option name="COLUMN_ID_ORDER">
       <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
       </list>
     </option>
   </component>
@@ -432,9 +459,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="title change" />
-    <MESSAGE value="logo &amp; favicon changes" />
-    <MESSAGE value="deploying github page" />
     <MESSAGE value="new mode added" />
     <MESSAGE value="small changes" />
     <MESSAGE value="switcher color for 720p screen" />
@@ -457,7 +481,10 @@
     <MESSAGE value="final commit for 1.2" />
     <MESSAGE value="updating version" />
     <MESSAGE value="Winner fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Winner fix" />
+    <MESSAGE value="balance after feedback, losing event won't give &quot;score&quot; to opponent anymore" />
+    <MESSAGE value="rule changing" />
+    <MESSAGE value="adding Pyra Mythra" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding Pyra Mythra" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

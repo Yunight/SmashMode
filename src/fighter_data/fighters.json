@@ -3214,7 +3214,7 @@
     "colorType": "B",
     "colorOrder": "0",
     "type": "",
-    "disabled": true,
+    "disabled": false,
     "displayNameEnSecondary": "PYRA / MYTHRA",
     "fileSecondary": "pyra",
     "slug": "cat02_fighter_79-80"

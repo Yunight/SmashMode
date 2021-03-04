@@ -311,12 +311,13 @@ class FightersBuild extends React.Component {
         this.handleClose();
         let tempFightersList = fighters_list;
         tempFightersList.map(fighter => {
-
-            if (fighter.id === "f082") {
+            //add fighter id to disable before any patch
+           /* if (fighter.id === "f082") {
                 return fighter;
             } else {
                 return fighter.disabled = false;
-            }
+            }*/
+            return fighter.disabled = false;
         });
 
         let players = this.state.players;
