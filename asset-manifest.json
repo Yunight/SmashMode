@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SmashModeOnline/static/css/main.a74d192a.chunk.css",
-    "main.js": "/SmashModeOnline/static/js/main.ce1e9b0f.chunk.js",
-    "main.js.map": "/SmashModeOnline/static/js/main.ce1e9b0f.chunk.js.map",
+    "main.js": "/SmashModeOnline/static/js/main.76b902ae.chunk.js",
+    "main.js.map": "/SmashModeOnline/static/js/main.76b902ae.chunk.js.map",
     "runtime-main.js": "/SmashModeOnline/static/js/runtime-main.2406de7a.js",
     "runtime-main.js.map": "/SmashModeOnline/static/js/runtime-main.2406de7a.js.map",
     "static/css/2.632c6353.chunk.css": "/SmashModeOnline/static/css/2.632c6353.chunk.css",
@@ -123,6 +123,6 @@
     "static/css/2.632c6353.chunk.css",
     "static/js/2.4f0206c8.chunk.js",
     "static/css/main.a74d192a.chunk.css",
-    "static/js/main.ce1e9b0f.chunk.js"
+    "static/js/main.76b902ae.chunk.js"
   ]
 }
