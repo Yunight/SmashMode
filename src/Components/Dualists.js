@@ -47,7 +47,7 @@ class Dualists extends React.Component {
                     <Grid item sm={1} xs={12} style={{backgroundColor:"white",borderRadius:5,padding:10}}>
                         <TextField style={{paddingBottom:10}} id="p1wins" label="Wins" variant="outlined"
                                    value={this.props.players[0].wins ? this.props.players[0].wins : ""} disabled={true} />
-                        <TextField id="p1score" label="BALLS" variant="outlined"
+                        <TextField id="p1score" label="Score" variant="outlined"
                                    value={this.props.players[0].score ? this.props.players[0].score : ""} disabled={true}/>
                     </Grid>
 
