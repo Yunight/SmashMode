@@ -381,12 +381,12 @@ class FightersBuild extends React.Component {
 
         if (!this.state.switchActive) {
             let tempFightersList = this.state.fightersList;
-            let selectedFighter = "";
+            //let selectedFighter = "";
 
             tempFightersList.map((fighter, index) => {
                 if (fighter.id === id) {
                     fighter.disabled = !fighter.disabled;
-                    selectedFighter = fighter.displayName.fr_FR;
+                   // selectedFighter = fighter.displayName.fr_FR;
                 }
                 return fighter;
             });

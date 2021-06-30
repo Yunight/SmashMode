@@ -3218,6 +3218,47 @@
     "displayNameEnSecondary": "PYRA / MYTHRA",
     "fileSecondary": "pyra",
     "slug": "cat02_fighter_79-80"
+  },
+  {
+    "id": "f083",
+    "displayNum": "81",
+    "dlc": 1,
+    "new": 1,
+    "displayName": {
+      "ja_JP": "カズヤ",
+      "en_US": "KAZUYA",
+      "en_GB": "KAZUYA",
+      "en_AU": "KAZUYA",
+      "fr_FR": "KAZUYA",
+      "fr_CA": "KAZUYA",
+      "es_ES": "KAZUYA",
+      "es_LA": "KAZUYA",
+      "de_DE": "KAZUYA",
+      "it_IT": "KAZUYA",
+      "nl_NL": "KAZUYA",
+      "ru_RU": "КАДЗУЯ",
+      "ko_KR": "KAZUYA",
+      "TC": "一八",
+      "SC": "一八"
+    },
+    "url": "81",
+    "displayNameJa": "カズヤ",
+    "serialNum": false,
+    "displayNameEn": "KAZUYA",
+    "displayNameKo": "KAZUYA",
+    "displayNameSc": "一八",
+    "displayNameTc": "一八",
+    "file": "kazuya",
+    "series": "tekken",
+    "dash": 0,
+    "color": "#a52319",
+    "colorType": "B",
+    "colorOrder": "0",
+    "type": "",
+    "disabled": false,
+    "displayNameEnSecondary": "KAZUYA",
+    "fileSecondary": "kazuya",
+    "slug": "cat02_fighter_81"
   }
 ]
 
